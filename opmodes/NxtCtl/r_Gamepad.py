@@ -241,3 +241,8 @@ gamepad1 = ol_Gamepad(0)
 gamepad2 = ol_Gamepad(1)
 gamepad1.updater()
 gamepad2.updater()
+
+gamepad3 = ol_Gamepad(2)
+gamepad4 = ol_Gamepad(3)
+gamepad3.updater()
+gamepad4.updater()
