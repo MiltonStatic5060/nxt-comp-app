@@ -1,0 +1,70 @@
+Help on package nxt:
+
+NNAAMMEE
+    nxt
+
+FFIILLEE
+    /home/ryan/Downloads/nxt-python-2.2.2/nxt/__init__.py
+
+DDEESSCCRRIIPPTTIIOONN
+    # nxt.__init__ module -- LEGO Mindstorms NXT python package
+    # Copyright (C) 2006  Douglas P Lau
+    # Copyright (C) 2009  Marcus Wanner
+    #
+    # This program is free software: you can redistribute it and/or modify
+    # it under the terms of the GNU General Public License as published by
+    # the Free Software Foundation, either version 3 of the License, or
+    # (at your option) any later version.
+    #
+    # This program is distributed in the hope that it will be useful,
+    # but WITHOUT ANY WARRANTY; without even the implied warranty of
+    # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    # GNU General Public License for more details.
+
+PPAACCKKAAGGEE  CCOONNTTEENNTTSS
+    bluesock
+    brick
+    direct
+    error
+    fantomsock
+    ipsock
+    lightblueglue
+    locator
+    motcont
+    motor
+    sensor (package)
+    system
+    telegram
+    usbsock
+    utils
+
+SSUUBBMMOODDUULLEESS
+    analog
+    common
+    digital
+    generic
+    hitechnic
+    mindsensors
+
+DDAATTAA
+    LLIIMMIITT__RRUUNN__FFOORREEVVEERR = 0
+    MMOODDEE__BBRRAAKKEE = 2
+    MMOODDEE__IIDDLLEE = 0
+    MMOODDEE__MMOOTTOORR__OONN = 1
+    MMOODDEE__RREEGGUULLAATTEEDD = 4
+    PPOORRTT__11 = 0
+    PPOORRTT__22 = 1
+    PPOORRTT__33 = 2
+    PPOORRTT__44 = 3
+    PPOORRTT__AA = 0
+    PPOORRTT__AALLLL = 255
+    PPOORRTT__BB = 1
+    PPOORRTT__CC = 2
+    RREEGGUULLAATTIIOONN__IIDDLLEE = 0
+    RREEGGUULLAATTIIOONN__MMOOTTOORR__SSPPEEEEDD = 1
+    RREEGGUULLAATTIIOONN__MMOOTTOORR__SSYYNNCC = 2
+    RRUUNN__SSTTAATTEE__IIDDLLEE = 0
+    RRUUNN__SSTTAATTEE__RRAAMMPP__DDOOWWNN = 64
+    RRUUNN__SSTTAATTEE__RRAAMMPP__UUPP = 16
+    RRUUNN__SSTTAATTEE__RRUUNNNNIINNGG = 32
+
