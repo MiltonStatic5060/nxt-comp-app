@@ -8,16 +8,16 @@ mx = nxt.Motor(b, nxt.PORT_A)
 def turnmotor(m, power, degrees):
 	m.turn(power, degrees)
 #how long from start until the last instruction is ended
-length = 1
+length = 5
 
 def runinstruction():
 	#THIS IS THE IMPORTANT PART!
 	thread.start_new_thread(
 		turnmotor,
-		(mx, 127, 10))
+		(mx, 127, 90))
 seconds = 0
 while 1:
-	print "Tick %d" % seconds
-	runinstruction()
+	turnmotor(mx,127,90)
+	print seconds
 	seconds = seconds + 1
-	time.sleep(.01)
+	time.sleep(.1)
