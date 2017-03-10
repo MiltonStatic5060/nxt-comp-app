@@ -2,16 +2,7 @@ import inputs
 import thread
 import time
 import progressbar
-
-class Range(object):
-    @staticmethod
-    def clip(input,min,max):
-        if(input<=min):
-            return min
-        elif(input>=max):
-            return max
-        else:
-            return round(input,2)
+import Range
 
 class ul_Gamepad(object):
     def __init__(self, x=None):
@@ -176,14 +167,8 @@ class ol_Gamepad(object):
         self.right_stick_y = 0 #ABS_RY
         self.right_stick_x = 0 #ABS_RX
     def button(self,x):
-        if x==0:
-            return "a"
-        if x==1:
-            return "b"
-        if x==2:
-            return "y"
-        if x==3:
-            return "x"
+        arr = ["a","b","y","x","dpad_down","dpad_right"]
+        return arr[x]
     def other_buttons(self,x):
         arr = "a b y x".split(" ")
         del arr[x]
@@ -192,9 +177,9 @@ class ol_Gamepad(object):
         while 1:
             if(self.status0==self.status1):
                 if(not self.status0):
-                    #print("Gamepad "+str(self.id+1)+" Unassigned")
+                    pass#print("Gamepad "+str(self.id+1)+" Unassigned")
                 if(self.status0):
-                    #print("Gamepad "+str(self.id+1)+" Assigned")
+                    pass#print("Gamepad "+str(self.id+1)+" Assigned")
                 self.status0 = not self.status1
     def update(self):
         for item in range(self.numG):

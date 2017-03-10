@@ -534,22 +534,15 @@ class MotorCon(BaseDigitalSensor):
         'm2gearratio': (0x5a, 'b'),
         'm2pid': (0x5b, '3B'),
     })
-
+    #I2C_DEV = 0x02
     class PID_Data():
         def __init__(self, p, i, d):
             self.p, self.i, self.d = p, i, d
 
-    def __init__(self, brick, port,i2c_dev, check_compatible=True):
-        if (i2c_dev==0):
-            I2C_DEV = 0x02
-        if (i2c_dev==1):
-            I2C_DEV = 0x04
-        if (i2c_dev==2):
-            I2C_DEV = 0x06
-        if (i2c_dev==3):
-            I2C_DEV = 0x08
+    def __init__(self, brick, port,check_compatible=True):
         super(MotorCon, self).__init__(brick, port, check_compatible)
-
+        #arr = [0x02,0x04,0x06,0x08]i2c_dev,
+        #I2C_DEV = arr[i2c_dev]
     def set_enc_target(self, mot, val):
         """Set the encoder target (-2147483648-2147483647) for a motor
         """
