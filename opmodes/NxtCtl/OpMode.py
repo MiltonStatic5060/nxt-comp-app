@@ -1,8 +1,6 @@
 #import inputs
-import nxt
-import time
-import thread
-from r_Gamepad import gamepad1, gamepad2, Range
+import nxt, time, thread, threading, Range
+from GamePad import gamepad1, gamepad2
 
 
 
@@ -18,5 +16,5 @@ def run():
     init_loop()
     while 1:
         loop()
-        time.sleep(.01)
+        time.sleep(.001)
 run()

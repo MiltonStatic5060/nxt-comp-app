@@ -1,0 +1,11 @@
+<DiagWindow>:
+    Label:
+        font_size: 35
+        center_x: root.width * 2 / 4
+        top: root.top - 50
+        text: str(root.info_label.text)
+
+    canvas:
+        Rectangle:
+            pos:self.center_x-5,0
+            size: 10, self.height
