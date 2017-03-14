@@ -27,7 +27,7 @@ motorCenter.reset_position(True)
 soundPlayer = SoundBrick.Player(b)
 
 while 1:
-	print "Tick %d" % seconds
+	#print "Tick %d" % seconds
 	power = gamepad1.left_stick_y
 	direction = gamepad1.left_stick_x
 	right = power - direction
@@ -35,7 +35,6 @@ while 1:
 	motorLeft.run(Range.clip(left*100,-100,100))
 	motorRight.run(Range.clip(right*100,-100,100))
 	#motorCenter
-	print(gamepad1.left_trigger)
 	motorCenter.run(Range.clip(gamepad1.left_trigger*-200+100,-64,64))
 
 	if(gamepad1.start and gamepad1.guide):
@@ -53,6 +52,11 @@ while 1:
 			soundPlayer.playSoundSample(i,120)
 			#noteArr = "lg a b c d e f g".split(" ")
 			#soundPlayer.playNote(noteArr[i],200,gamepad1.right_trigger)
+	if(gamepad1.back):
+		soundPlayer.playSound(SoundBrick.csvToSong("mario"),120)
+	padDisplay.reset()
+	gamepad1.show_status()
+	gamepad2.show_status()
 
 	seconds = seconds + 1
 	time.sleep(.001)

@@ -1,8 +1,9 @@
 #import inputs
 import nxt, time, thread, threading, Range
-from GamePad import gamepad1, gamepad2
+from GamePad import *
+from GameGraphics import TextDisplay
 
-
+telemetry = TextDisplay("Robot Telemetry")
 
 def init():
     pass
@@ -16,5 +17,10 @@ def run():
     init_loop()
     while 1:
         loop()
-        time.sleep(.001)
+        padDisplay.reset()
+        gamepad1.show_status()
+        gamepad2.show_status()
+        gamepad3.show_status()
+        gamepad4.show_status()
+        time.sleep(.01)
 run()

@@ -1,8 +1,5 @@
-import inputs
-import thread
-import time
-import progressbar
-import Range
+import inputs, thread, time, progressbar, Range
+from GameGraphics import TextDisplay
 
 class ul_Gamepad(object):
     def __init__(self, x=None):
@@ -167,10 +164,10 @@ class ol_Gamepad(object):
         self.right_stick_y = 0 #ABS_RY
         self.right_stick_x = 0 #ABS_RX
     def button(self,x):
-        arr = ["a","b","y","x","dpad_down","dpad_right"]
+        arr = "a b y x dpad_down dpad_right".split(" ")
         return arr[x]
     def other_buttons(self,x):
-        arr = "a b y x".split(" ")
+        arr = "a b y x dpad_down dpad_right".split(" ")
         del arr[x]
         return arr
     def status(self):
@@ -182,16 +179,16 @@ class ol_Gamepad(object):
                     pass#print("Gamepad "+str(self.id+1)+" Assigned")
                 self.status0 = not self.status1
     def update(self):
-        for item in range(self.numG):
-            self.gamepads.append(ul_Gamepad(item))
-            thread.start_new_thread(self.gamepads[item].update,())
+        for num in range(self.numG):
+            self.gamepads.append(ul_Gamepad(num))
+            thread.start_new_thread(self.gamepads[num].update,())
         print("Gamepad "+str(self.id+1)+" Initialized")
-        while (self.id<=self.numG):
-            for item in range(self.numG):
+        while (self.id<=self.other_buttons(self.id)):
+            for item in range(len(self.gamepads)):
                 if(self.gamepads[item].start and self.gamepads[item].__dict__[self.button(self.id)]):
                     self.pad = self.gamepads[item]
                     self.status1 = True
-                for f in range(3):
+                for f in range(len(self.other_buttons(self.id))):
                     if(self.pad.start and self.pad.__dict__[self.other_buttons(self.id)[f]]):
                         self.pad = self.old
                         self.status1 = False
@@ -221,13 +218,37 @@ class ol_Gamepad(object):
     def updater(self):
         thread.start_new_thread(self.update,())
         thread.start_new_thread(self.status,())
+    def toStr_bool(self):
+        arr = "start back guide a b x y dpad_up dpad_down dpad_left dpad_right left_bumper right_bumper left_stick_button right_stick_button".split(" ")
+        s = ""
+        for i in arr:
+            if self.__dict__[i]:
+                s+=i
+                s+=" "
+        return s
+    def toStr_float(self):
+        arr = "left_trigger right_trigger left_stick_y left_stick_x right_stick_y right_stick_x".split(" ")
+        s = ""
+        for i in arr:
+            s+=i+":"
+            s+=str(self.__dict__[i])
+            s+=" "
+        return s
+    def get_state(self):
+        return [str("gamepad"+str(self.id+1)),str(self.toStr_float()),str(self.toStr_bool())]
+    def show_status(self):
+        for f in self.get_state():
+            padDisplay.arr.append(f)
+
+padDisplay = TextDisplay("Gamepads")
+padDisplay.updater()
 
 gamepad1 = ol_Gamepad(0)
 gamepad2 = ol_Gamepad(1)
-gamepad1.updater()
-gamepad2.updater()
-
 gamepad3 = ol_Gamepad(2)
 gamepad4 = ol_Gamepad(3)
+
+gamepad1.updater()
+gamepad2.updater()
 gamepad3.updater()
 gamepad4.updater()

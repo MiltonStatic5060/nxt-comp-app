@@ -22,7 +22,7 @@ def csvToSong(filename):
     batch = []
     for row in c:
         batch.append(row)
-    print batch
+    #print batch
     return batch
     #    print(row)
 import threading
@@ -50,6 +50,8 @@ class PlayerObj(threading.Thread):
             self.start()
     def playSoundSample(self,b,batchNum,tempo):
         bat = []
+        #Mario!!!
+        bat.append("e,1,1 e,1,1 e,3,0 c,1,0 e,2,0 g,1,2 lg,3,0")
         #That Rally Call tune
         bat.append("d,1,1 d,2,0 f#,2,0 ha,3,0 f#,1,0 ha,3,0")
         #Sad noise when mistakes are made
@@ -77,7 +79,7 @@ class PlayerObj(threading.Thread):
         raw = []
         for item in batch:
             raw.append([note_freq[item[0]],item[1],item[2]])
-        
+
         #tempo = 120#int(input('What tempo do you want to play this as in BPM'))
         cor_tempo = (1000/(tempo/60))/4
         #print('Milliseconds per semi-quaver is:' + str(cor_tempo))
