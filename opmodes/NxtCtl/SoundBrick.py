@@ -1,5 +1,5 @@
 import nxt
-note_str = "la la# lb lc lc# ld ld# le lf lf# lg lg# a a# b c c# d d# e f f# g g# ha ha# hb hc hc# hd hd# he hf hf# hg hg# 2a"
+note_str = "la la# lb lc lc# ld ld# le lf lf# lg lg# a a# b c c# d d# e f f# g g# ha ha# hb hc hc# hd hd# he hf hf# hg hg# 2a 2a# 2b 2c 2c# 2d 2d# 2e 2f 2f# 2g 2g# 3a"
 note_arr = note_str.split(" ")
 note_freq = {}
 def getFreqFunc(x):

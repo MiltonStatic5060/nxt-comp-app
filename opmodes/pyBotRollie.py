@@ -53,7 +53,7 @@ while 1:
 			#noteArr = "lg a b c d e f g".split(" ")
 			#soundPlayer.playNote(noteArr[i],200,gamepad1.right_trigger)
 	if(gamepad1.back):
-		soundPlayer.playSound(SoundBrick.csvToSong("mario"),120)
+		soundPlayer.playSound(SoundBrick.csvToSong("fireflies"),120)
 	padDisplay.reset()
 	gamepad1.show_status()
 	gamepad2.show_status()
