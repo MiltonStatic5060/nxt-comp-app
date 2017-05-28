@@ -2,8 +2,8 @@ from NxtCtl import SoundBrick
 import nxt, thread, time
 import nxt.bluesock # Make sure you remember this!
 from NxtCtl.GamePad import *
-#b = nxt.bluesock.BlueSock('00:16:53:10:22:3D').connect() #replace the string with the one you got earlier
-b = nxt.bluesock.BlueSock('00:16:53:16:12:02').connect() #replace the string with the one you got earlier
+b = nxt.bluesock.BlueSock('00:16:53:10:22:3D').connect() #replace the string with the one you got earlier
+#b = nxt.bluesock.BlueSock('00:16:53:16:12:02').connect() #replace the string with the one you got earlier
 #b = nxt.find_one_brick()
 motorLeft = nxt.Motor(b, nxt.PORT_A)
 motorRight = nxt.Motor(b, nxt.PORT_B)
@@ -56,7 +56,7 @@ while 1:
 		soundPlayer.playSound(SoundBrick.csvToSong("mario"),120)
 	padDisplay.reset()
 	gamepad1.show_status()
-	gamepad2.show_status()
+	gamepad1.show_status()
 
 	seconds = seconds + 1
 	time.sleep(.001)

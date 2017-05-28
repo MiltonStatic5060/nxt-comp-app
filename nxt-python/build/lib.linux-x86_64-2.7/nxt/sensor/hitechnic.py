@@ -533,18 +533,16 @@ class MotorCon(BaseDigitalSensor):
         'm1pid': (0x57, '3B'),
         'm2gearratio': (0x5a, 'b'),
         'm2pid': (0x5b, '3B'),
-
     })
-    #I2C_DEV = BaseDigitalSensor.I2C_DEV
-    I2C_DEV = 0x02
+
     class PID_Data():
         def __init__(self, p, i, d):
             self.p, self.i, self.d = p, i, d
 
-    def __init__(self, brick, port,check_compatible=True):
-        super(MotorCon, self).__init__(brick, port, check_compatible)
-        #arr = [0x02,0x04,0x06,0x08]i2c_dev,
-        #I2C_DEV = arr[i2c_dev]
+    def __init__(self, brick, port, devnum=0, check_compatible=True):
+        super(MotorCon, self).__init__(brick, port, devnum, check_compatible)
+        arr = [0x2,0x4,0x6,0x8]
+        I2C_DEV = arr[devnum]
     def set_enc_target(self, mot, val):
         """Set the encoder target (-2147483648-2147483647) for a motor
         """
@@ -575,8 +573,6 @@ find details about it in the sensor's documentation.
     def set_power(self, mot, power):
         """Set the power (-100-100) for a motor
         """
-        msg = chr(0x02)+chr(0x02)
-        #self.brick.ls_write(self.port, msg, 0)
         self.write_value('m%dpower'%mot, (power, ))
 
     def get_power(self, mot):
