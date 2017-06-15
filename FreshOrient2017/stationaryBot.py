@@ -9,12 +9,6 @@ import nxt.bluesock # Make sure you remember this!
 #--Initialize--
 b = nxt.bluesock.BlueSock('00:16:53:16:12:02').connect() #replace the string with the one you got earlier
 #--Setup-- PORT_1 = ServoCon 000111; PORT_2 = MotorCon 0010; NXT Motors 111;
-armElbow = nxt.Motor(b, nxt.PORT_A)
-armShoul = nxt.Motor(b, nxt.PORT_B)
-armWrist = nxt.Motor(b, nxt.PORT_C)
-
-armBase = hardwareMap.Servo(b, nxt.PORT_1, 1)
-armClaw = hardwareMap.Servo(b, nxt.PORT_1,2)
 
 #--Robot Arm Controls--
 #armElbow angElbow  nxt motor+string or strong servos PORT_A
@@ -23,12 +17,25 @@ armClaw = hardwareMap.Servo(b, nxt.PORT_1,2)
 #armWrist angWrist  servo or nxt motor PORT_C
 #servoClaw  angClaw servo PORT_1,2
 
-catShoot = hardwareMap.DcMotor(b, nxt.PORT_2, 1)
-catBase  = hardwareMap.Servo(b,nxt.PORT_1,3)
+angElbow = 0 #degrees 0 to 180; 0 is fully extended
+angShoul = 0 #degrees 0 to 90; 0 is fully extended
+angBase = 90 #degrees 0 to 90/180; 0 is all the way left, 90/180 is all the way right
+angWrist = 90 #degrees 0 to 180; 0 is all the way up, 180 is all the way down; 90 starts in the middle
+angClaw = 0 #degrees 0 to 90; 0 is closed position
+
+armElbow = nxt.Motor(b, nxt.PORT_A)
+armShoul = nxt.Motor(b, nxt.PORT_B)
+armWrist = nxt.Motor(b, nxt.PORT_C)
+
+armBase = hardwareMap.Servo(b, nxt.PORT_1, 1)
+armClaw = hardwareMap.Servo(b, nxt.PORT_1,2)
 
 #--Catapult--
 #catShoot tetrix motor PORT_1,2
 #catBase  180servo PORT_2,2
+catShoot = hardwareMap.DcMotor(b, nxt.PORT_2, 1)
+catBase  = hardwareMap.Servo(b,nxt.PORT_1,3)
+angCat = 90 #degrees 0 to 90/180; 0 is all the way left, 90/180 is all the way right
 
 #--Song for Attention--
 #Any of the Preset Songs
