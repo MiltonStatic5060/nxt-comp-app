@@ -127,56 +127,59 @@ class ul_Gamepad(object):
                     if(event.state==0):
                         self.right_bumper = False
 class ol_Gamepad(object):
+    message = 0 #Gamepad Indicator message 3 state switch: int 0-2
+
+    status0 = False
+    status1 = False
+    gamepads = []
+    pad = ul_Gamepad()
+    old = ul_Gamepad()
+    numG = len(inputs.DeviceManager().gamepads)
+    #center buttons
+    start = False #BTN_START
+    back = False #BTN_SELECT
+    guide = False #BTN_MODE
+    #Colorful buttons on right side
+    a = False #BTN_SOUTH
+    b = False #BTN_EAST
+    x = False #BTN_NORTH
+    y = False #BTN_WEST
+    #Dpad on the left
+    dpad_up = False    #ABS_HAT0Y,-1
+    dpad_down = False  #ABS_HAT0Y, 1
+    dpad_left = False  #ABS_HAT0X,-1
+    dpad_right = False #ABS_HAT0X, 1
+    #Shoulder buttons
+    left_bumper = False    #BTN_TL
+    right_bumper = False   #BTN_TR
+    left_trigger  = 0 #ABS_Z
+    right_trigger = 0 #ABS_RZ
+
+    #Joysticks
+    left_stick_button = False   #BTN_THUMBL
+    right_stick_button = False  #BTN_THUMBR
+    left_stick_y = 0 #ABS_Y
+    left_stick_x = 0 #ABS_X
+    right_stick_y = 0 #ABS_RY
+    right_stick_x = 0 #ABS_RX
     def __init__(self,n):
-
-        self.status0 = False
-        self.status1 = False
         self.id = n
-        self.gamepads = []
-        self.pad = ul_Gamepad()
-        self.old = ul_Gamepad()
-        self.numG = len(inputs.DeviceManager().gamepads)
-        #center buttons
-        self.start = False #BTN_START
-        self.back = False #BTN_SELECT
-        self.guide = False #BTN_MODE
-        #Colorful buttons on right side
-        self.a = False #BTN_SOUTH
-        self.b = False #BTN_EAST
-        self.x = False #BTN_NORTH
-        self.y = False #BTN_WEST
-        #Dpad on the left
-        self.dpad_up = False    #ABS_HAT0Y,-1
-        self.dpad_down = False  #ABS_HAT0Y, 1
-        self.dpad_left = False  #ABS_HAT0X,-1
-        self.dpad_right = False #ABS_HAT0X, 1
-        #Shoulder buttons
-        self.left_bumper = False    #BTN_TL
-        self.right_bumper = False   #BTN_TR
-        self.left_trigger  = 0 #ABS_Z
-        self.right_trigger = 0 #ABS_RZ
-
-        #Joysticks
-        self.left_stick_button = False   #BTN_THUMBL
-        self.right_stick_button = False  #BTN_THUMBR
-        self.left_stick_y = 0 #ABS_Y
-        self.left_stick_x = 0 #ABS_X
-        self.right_stick_y = 0 #ABS_RY
-        self.right_stick_x = 0 #ABS_RX
     def button(self,x):
-        arr = "a b y x dpad_down dpad_right".split(" ")
+        arr = "a b y x dpad_down dpad_right dpad_up dpad_down".split(" ")
         return arr[x]
     def other_buttons(self,x):
-        arr = "a b y x dpad_down dpad_right".split(" ")
+        arr = "a b y x dpad_down dpad_right dpad_up dpad_down".split(" ")
         del arr[x]
         return arr
     def status(self):
         while 1:
             if(self.status0==self.status1):
                 if(not self.status0):
-                    pass#print("Gamepad "+str(self.id+1)+" Unassigned")
+                    #print "Gamepad %d Unassigned" % (self.id+1)
+                    self.message = 0
                 if(self.status0):
-                    pass#print("Gamepad "+str(self.id+1)+" Assigned")
+                    print "Gamepad %d Assigned" % (self.id+1)
+                    self.message = 0
                 self.status0 = not self.status1
     def update(self):
         for num in range(self.numG):
@@ -223,16 +226,16 @@ class ol_Gamepad(object):
         s = ""
         for i in arr:
             if self.__dict__[i]:
-                s+=i
-                s+=" "
+                s += i
+                s += " "
         return s
     def toStr_float(self):
         arr = "left_trigger right_trigger left_stick_y left_stick_x right_stick_y right_stick_x".split(" ")
         s = ""
         for i in arr:
-            s+=i+":"
-            s+=str(self.__dict__[i])
-            s+=" "
+            s += i + ":"
+            s += str(self.__dict__[i])
+            s += " "
         return s
     def get_state(self):
         return [str("gamepad"+str(self.id+1)),str(self.toStr_float()),str(self.toStr_bool())]
@@ -240,8 +243,8 @@ class ol_Gamepad(object):
         for f in self.get_state():
             padDisplay.arr.append(f)
 
-padDisplay = TextDisplay("Gamepads")
-padDisplay.updater()
+#padDisplay = TextDisplay("Gamepads")
+#padDisplay.updater()
 
 gamepad1 = ol_Gamepad(0)
 gamepad2 = ol_Gamepad(1)

@@ -2,6 +2,7 @@ import pygame
 import thread
 import time
 
+
 class TextDisplay(object):
     def __init__(self,name):
         #takes in 1 argument of a name
@@ -10,7 +11,7 @@ class TextDisplay(object):
     def reset(self):
         self.arr = [self.name]
     def addData(self,input0,input1=""):
-        if input1!="":
+        if input1 != "":
             input1 = " : "+str(input1)
         self.arr.append(str(input0)+str(input1))
     def updater(self):
@@ -51,13 +52,13 @@ class TextDisplay(object):
             screen.blit(background, (0, 0))
             pygame.display.flip()
 
-#telemetry = TextDisplay("First Display")
-#telemetry.updater()
-#
-#
+telemetry = TextDisplay("First Display")
+telemetry.updater()
+
+
 #while 1:
-#    time.sleep(.001)
-#    telemetry.reset()
-#    telemetry.addData("")
-#    telemetry.addData("left trigger",gamepad1.left_trigger)
-#    #print(gamepad1.left_trigger)
+    #time.sleep(.001)
+    #telemetry.reset()
+    #telemetry.addData("")
+    #telemetry.addData("left trigger",gamepad1.left_trigger)
+    #print(gamepad1.left_trigger)

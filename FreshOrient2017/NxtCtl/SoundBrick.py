@@ -17,8 +17,8 @@ import csv
 import time
 def csvToSong(filename):
     #batch is a 2d list that contains a list for each note [[le,2,0],[lf#,1,0]]
-    f = filename#open(input('Enter file to open') + '.csv','r')
-    c = csv.reader(open(f+".csv","r"))
+    f = filename #open(input('Enter file to open') + '.csv','r')
+    c = csv.reader(open(f,"r"))
     batch = []
     for row in c:
         batch.append(row)
@@ -127,8 +127,6 @@ class Player(object):
         if not self.obj.isAlive():
             self.obj = PlayerObj()
     def success(self):
-        print message[random.randint(0,len(message)-1)]
-        self.playSoundSample(1,120)
         message = [
         "It is fully operational!",
         "It's alive!",
@@ -136,5 +134,7 @@ class Player(object):
         "Cue the music.",
         "Let's roll out!"
         ]
-    def playCsv(self,csvfilename,tempo):
+        print message[random.randint(0,len(message)-1)]
+        self.playSoundSample(1,120)
+    def playFile(self,filename,tempo):
         self.playSound(csvToSong(csvfilename),tempo)

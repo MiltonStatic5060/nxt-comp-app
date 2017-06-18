@@ -1,5 +1,5 @@
 #import packages for Gamepad Control and Motor Controls
-from NxtCtl import SoundBrick, hardwareMap
+from NxtCtl import SoundBrick, hardwareMap, Range
 from NxtCtl.GamePad import *
 
 #import nxt-python packages to connect to robot and bluetooth
@@ -46,7 +46,7 @@ soundPlayer = SoundBrick.Player(b)
 
 seconds = 0
 #--Initialization Success--
-soundPlayer.playCsv("superscale",120)
+soundPlayer.success()
 while 1:
     #Time control and management
     seconds = seconds + 1
