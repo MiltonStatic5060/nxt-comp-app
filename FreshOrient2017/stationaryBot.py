@@ -7,7 +7,8 @@ import nxt, thread, time
 import nxt.bluesock # Make sure you remember this!
 
 #--Initialize--
-b = nxt.bluesock.BlueSock('00:16:53:16:12:02').connect() #replace the string with the one you got earlier
+#b = nxt.bluesock.BlueSock('00:16:53:16:12:02').connect() #5060-S
+b = nxt.bluesock.BlueSock('00:16:53:10:22:3D').connect() #5060
 #--Setup-- PORT_1 = ServoCon 000111; PORT_2 = MotorCon 0010; NXT Motors 111;
 
 #--Robot Arm Controls--
@@ -43,10 +44,10 @@ angCat = 90 #degrees 0 to 90/180; 0 is all the way left, 90/180 is all the way r
 while 1:
     #Time control and management
     seconds = seconds + 1
-	time.sleep(.001)
+    time.sleep(.001)
 
     #Catapult
-    #left_trigger - shoot
+    #left_trigger - shoot - catShoot.setPower()
     #left_bumper right_bumper - aim Catapult
 
 

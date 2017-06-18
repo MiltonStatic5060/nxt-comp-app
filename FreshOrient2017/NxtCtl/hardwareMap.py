@@ -7,7 +7,11 @@ class DcMotor(MotorCon):
         self.motorport = motorport
     def set_power(self,power):
         super(DcMotorController,self).set_power(motorport,power)
+    def setPower(self,power):
+        super(DcMotorController,self).set_power(motorport,power)
     def get_power(self,power):
+        super(DcMotorController,self).get_power(motorport,power)
+    def getPower(self,power):
         super(DcMotorController,self).get_power(motorport,power)
 
 class Servo(ServoCon):
