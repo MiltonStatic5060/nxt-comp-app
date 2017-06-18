@@ -5,11 +5,19 @@ from NxtCtl.GamePad import *
 #import nxt-python packages to connect to robot and bluetooth
 import nxt, thread, time
 import nxt.bluesock # Make sure you remember this!
+from nxt.sensor.hitechnic import *
 
 #--Initialize--
 #b = nxt.bluesock.BlueSock('00:16:53:16:12:02').connect() #5060-S
 b = nxt.bluesock.BlueSock('00:16:53:10:22:3D').connect() #5060
 #--Setup-- PORT_1 = ServoCon 000111; PORT_2 = MotorCon 0010; NXT Motors 111;
+
+#--Catapult--
+#catShoot tetrix motor PORT_1,2
+#catBase  180servo PORT_2,2
+catShoot = hardwareMap.DcMotor(b, nxt.PORT_2, 1)
+catBase  = hardwareMap.Servo(b,nxt.PORT_1,3)
+angCat = 90 #degrees 0 to 90/180; 0 is all the way left, 90/180 is all the way right
 
 #--Robot Arm Controls--
 #armElbow angElbow  nxt motor+string or strong servos PORT_A
@@ -31,16 +39,14 @@ armWrist = nxt.Motor(b, nxt.PORT_C)
 armBase = hardwareMap.Servo(b, nxt.PORT_1, 1)
 armClaw = hardwareMap.Servo(b, nxt.PORT_1,2)
 
-#--Catapult--
-#catShoot tetrix motor PORT_1,2
-#catBase  180servo PORT_2,2
-catShoot = hardwareMap.DcMotor(b, nxt.PORT_2, 1)
-catBase  = hardwareMap.Servo(b,nxt.PORT_1,3)
-angCat = 90 #degrees 0 to 90/180; 0 is all the way left, 90/180 is all the way right
 
 #--Song for Attention--
 #Any of the Preset Songs
+soundPlayer = SoundBrick.Player(b)
 
+seconds = 0
+#--Initialization Success--
+soundPlayer.playCsv("superscale",120)
 while 1:
     #Time control and management
     seconds = seconds + 1

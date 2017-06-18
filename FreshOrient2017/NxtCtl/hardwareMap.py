@@ -3,16 +3,16 @@ from nxt.sensor.hitechnic import *
 
 class DcMotor(MotorCon):
     def __init__(self, brick, port, motorport):
-        super(DcMotorController,self).__init__(brick, port)
+        super(DcMotor,self).__init__(brick, port)
         self.motorport = motorport
     def set_power(self,power):
-        super(DcMotorController,self).set_power(motorport,power)
+        super(DcMotor,self).set_power(motorport,power)
     def setPower(self,power):
-        super(DcMotorController,self).set_power(motorport,power)
+        super(DcMotor,self).set_power(motorport,power)
     def get_power(self,power):
-        super(DcMotorController,self).get_power(motorport,power)
+        super(DcMotor,self).get_power(motorport,power)
     def getPower(self,power):
-        super(DcMotorController,self).get_power(motorport,power)
+        super(DcMotor,self).get_power(motorport,power)
 
 class Servo(ServoCon):
     def __init__(self, brick, port, servoport):

@@ -69,7 +69,8 @@ class PlayerObj(threading.Thread):
         self.playSound(b,batchArr,tempo)
     def playSound(self,b,batch,tempo):
         #tempo is a BPM number for the song
-        #batch is a 2d list that contains a list for each note [[le,2,0],[lf#,1,0]]
+        #batch is a 2d list that contains a list for each note [["le",2,0],["lf"#,1,0]]
+        #[[note name, duration, amount of silence after]]
         #f = open(input('Enter file to open') + '.csv','r')
         #c = csv.reader(f)
         #batch = []
@@ -95,7 +96,7 @@ class PlayerObj(threading.Thread):
         b.play_tone(int(freq),duration)
 
 #SoundBrick.playSound(csvToSong("victory"),120)
-
+import random
 class Player(object):
     def __init__(self,brick):
         self.obj = PlayerObj()
@@ -125,3 +126,15 @@ class Player(object):
     def safeCreation(self):
         if not self.obj.isAlive():
             self.obj = PlayerObj()
+    def success(self):
+        print message[random.randint(0,len(message)-1)]
+        self.playSoundSample(1,120)
+        message = [
+        "It is fully operational!",
+        "It's alive!",
+        "Houston we are a go.",
+        "Cue the music.",
+        "Let's roll out!"
+        ]
+    def playCsv(self,csvfilename,tempo):
+        self.playSound(csvToSong(csvfilename),tempo)
