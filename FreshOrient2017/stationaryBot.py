@@ -1,6 +1,6 @@
 #import packages for Gamepad Control and Motor Controls
 from NxtCtl import SoundBrick, hardwareMap, Range
-from NxtCtl.GamePad import *
+from nxt.GamePad import *
 
 #import nxt-python packages to connect to robot and bluetooth
 import nxt, thread, time
@@ -55,6 +55,7 @@ while 1:
     #Catapult
     #left_trigger - shoot - catShoot.setPower()
     #left_bumper right_bumper - aim Catapult
+    angCat = Range.clip(0,180,angCat) #degrees 0 to 90/180;
 
 
     #Robot Arm
@@ -63,7 +64,21 @@ while 1:
     #right_stick_y - arm upwards/downwards
     #right_trigger - claw control open/close
     #a or b - toggle state open/close
+    angShoul = (gamepad1.right_stick_y+1)*5.0 #(0 to 2) * 5 = 0 to 10
+    #sticks range -1 to 1; Add 1 means 0 to 2;
+    angBase  = (gamepad1.left_stick_x+1)*90.0 #(0 to 2) * 90 = 0 to 180
 
+    #Robot Arm Angles Proccessed
+    angElbow = Range.clip(0,180,angElbow) #degrees 0 to 180
+    angShoul = Range.clip(0,90,angShoul) #degrees 0 to 90
+    angWrist = Range.clip(0,180,angWrist) #degrees 0 to 180
+    angBase = Range.clip(0,180,angBase) #degrees 0 to 90/180
+    angClaw = Range.clip(0,90,angClaw) #degrees 0 to 90
+
+    armShoul.turn(50,angShoul) #converted in tachos not degrees yet
+
+    armBase.setPosition(angBase/180.0*255.0) #Servo position is 0-255
+    armClaw.setPosition(angClaw/90.0*255.0)  #Servo position is 0-255
 
     #Sound Controller
     arr = [gamepad1.dpad_up,gamepad1.dpad_right,gamepad1.dpad_down,gamepad1.dpad_left]
