@@ -1,6 +1,6 @@
 #import packages for Gamepad Control and Motor Controls
 from NxtCtl import SoundBrick, hardwareMap, Range
-from nxt.GamePad import *
+from NxtCtl.GamePad import *
 
 #import nxt-python packages to connect to robot and bluetooth
 import nxt, thread, time
@@ -55,7 +55,7 @@ while 1:
     #Catapult
     #left_trigger - shoot - catShoot.setPower()
     #left_bumper right_bumper - aim Catapult
-    angCat = Range.clip(0,180,angCat) #degrees 0 to 90/180;
+    angCat = Range.clip(angCat,0,180) #degrees 0 to 90/180;
 
 
     #Robot Arm
@@ -69,11 +69,11 @@ while 1:
     angBase  = (gamepad1.left_stick_x+1)*90.0 #(0 to 2) * 90 = 0 to 180
 
     #Robot Arm Angles Proccessed
-    angElbow = Range.clip(0,180,angElbow) #degrees 0 to 180
-    angShoul = Range.clip(0,90,angShoul) #degrees 0 to 90
-    angWrist = Range.clip(0,180,angWrist) #degrees 0 to 180
-    angBase = Range.clip(0,180,angBase) #degrees 0 to 90/180
-    angClaw = Range.clip(0,90,angClaw) #degrees 0 to 90
+    angElbow = Range.clip(angElbow,0,180) #degrees 0 to 180
+    angShoul = Range.clip(angShoul,0,90) #degrees 0 to 90
+    angWrist = Range.clip(angWrist,0,180) #degrees 0 to 180
+    angBase = Range.clip(angBase,0,180) #degrees 0 to 90/180
+    angClaw = Range.clip(angClaw,0,90) #degrees 0 to 90
 
     armShoul.turn(50,angShoul) #converted in tachos not degrees yet
 
