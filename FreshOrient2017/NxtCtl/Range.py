@@ -1,10 +1,15 @@
-def clip(INPUT,MIN,MAX):
-    if(INPUT<=MIN):
+
+def clip(VAL,MIN,MAX):
+    if(VAL<MIN):
         return MIN
-    elif(INPUT>=MAX):
+    elif(VAL>MAX):
+        return MAX
+    elif(VAL==MIN):
+        return MIN
+    elif(VAL==MAX):
         return MAX
     else:
-        return round(input,2)
+        return round(VAL,2)
 def isNear(var,target,threshold):
     diff = var-target
     return abs(diff)<=threshold
