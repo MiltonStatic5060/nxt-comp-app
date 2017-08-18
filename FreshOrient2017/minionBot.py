@@ -8,15 +8,15 @@ import nxt.bluesock # Make sure you remember this!
 from nxt.sensor.hitechnic import *
 
 #--Initialize--
-b = nxt.bluesock.BlueSock('00:16:53:16:12:02').connect() #5060-S
-#b = nxt.bluesock.BlueSock('00:16:53:10:22:3D').connect() #5060
+#b1 = nxt.bluesock.BlueSock('00:16:53:16:12:02').connect() #5060-S
+b = nxt.bluesock.BlueSock('00:16:53:10:22:3D').connect() #5060
 
 # motorRight = DcMotor( b, nxt.PORT_1, 1)
 # motorLeft = DcMotor( b, nxt.PORT_1, 2)
 # motorRight1 = DcMotor( b, nxt.PORT_2, 1)
 # motorLeft1 = DcMotor( b, nxt.PORT_2, 2)
 #
-# minonLights = DcMotor( b, nxt.PORT_3, 1)
+# minionLights = DcMotor( b, nxt.PORT_3, 1)
 
 def r_motorPower():
     left_x = Range.clip(gamepad1.left_stick_x,-1,1);
