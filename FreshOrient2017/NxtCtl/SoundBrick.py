@@ -1,5 +1,5 @@
 import nxt
-note_str = "la la# lb lc lc# ld ld# le lf lf# lg lg# a a# b c c# d d# e f f# g g# ha ha# hb hc hc# hd hd# he hf hf# hg hg# 2a 2a# 2b 2c 2c# 2d 2d# 2e 2f 2f# 2g 2g# 3a"
+note_str = "la la# lb lc lc# ld ld# le lf lf# lg lg# a a# b c c# d d# e f f# g g# ha ha# hb hc hc# hd hd# he hf hf# hg hg# 2a 2a# 2b 2c 2c# 2d 2d# 2e 2f 2f# 2g 2g# 3a 3a# 3b 3c 3c# 3d 3d# 3e 3f 3f# 3g 3g# 3a"
 note_arr = note_str.split(" ")
 note_freq = {}
 def getFreqFunc(x):
@@ -17,6 +17,7 @@ import csv
 import time
 def csvToSong(filename):
     #batch is a 2d list that contains a list for each note [[le,2,0],[lf#,1,0]]
+    #may enter batch into playSound() function
     f = filename #open(input('Enter file to open') + '.csv','r')
     c = csv.reader(open(f,"r"))
     batch = []
@@ -49,16 +50,24 @@ class PlayerObj(threading.Thread):
         if not self.isAlive():
             self.start()
     def playSoundSample(self,b,batchNum,tempo):
+        def batToString(batch):
+            return " ".join( ",".join(x) for x in batch)
+
         bat = []
+        #Gamecube Sound
+        bat.append(batToString(csvToSong("gamecube.csv")))
         #Mario!!!
         bat.append("e,1,1 e,1,1 e,3,0 c,1,0 e,2,0 g,1,2 lg,3,0")
         #That Rally Call tune
         bat.append("d,1,1 d,2,0 f#,2,0 ha,3,0 f#,1,0 ha,3,0")
         #Sad noise when mistakes are made
         bat.append("g,1,0 f#,1,0 f,1,0 e,3,0")
+        #mario got a coin noise
         bat.append("b,1,0 d,1,0 c,1,0 e,1,0")
         bat.append("a,1,0 c,1,0 e,1,0 ha,1,0")
+        #question noise
         bat.append("a,1,0 f,1,0 e,1,0")
+        #the Windows I Screwed Up noise
         bat.append("lb,1,1 lb,2,0")
 
         batchArr = [arr.split(",") for arr in bat[batchNum].split(" ")]
