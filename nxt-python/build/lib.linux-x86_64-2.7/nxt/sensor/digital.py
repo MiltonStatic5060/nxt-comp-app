@@ -55,7 +55,6 @@ class BaseDigitalSensor(Sensor):
         'factory_scale_factor': (0x12, 'B'),
         'factory_scale_divisor': (0x13, 'B'),
     }
-    I2C_add = 0x02
 
     def __init__(self, brick, port, check_compatible=True):
         """Creates a BaseDigitalSensor. If check_compatible is True, queries
@@ -65,7 +64,7 @@ class BaseDigitalSensor(Sensor):
         super(BaseDigitalSensor, self).__init__(brick, port)
         self.set_input_mode(Type.LOW_SPEED_9V, Mode.RAW)
         self.last_poll = time()
-        self.poll_delay = 0.06
+        self.poll_delay = 0.01
         sleep(0.1)  # Give I2C time to initialize
         #Don't do type checking if this class has no compatible sensors listed.
         try: self.compatible_sensors
@@ -96,19 +95,13 @@ suppressed by passing "check_compatible=False" when creating the sensor object."
         a tuple of values corresponding to the given format.
         """
         value = struct.pack(format, *value)
-        msg = chr(0x02) + chr(address) + chr(self.I2C_DEV) + value
+        msg = chr(self.I2C_DEV) + chr(address) + value
         now = time()
-        #print(now)
-        print(str(self.I2C_DEV)+" "+str(address)+value)
         if self.last_poll+self.poll_delay > now:
             diff = now - self.last_poll
             sleep(self.poll_delay - diff)
-            #print("sleep :",self.poll_delay-diff)
-            #print("diff :", diff)
         self.last_poll = time()
-        #print(self.last_poll)
         self.brick.ls_write(self.port, msg, 0)
-
 
     def _i2c_query(self, address, format):
         """Reads an i2c value from given address, and returns a value unpacked

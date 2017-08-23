@@ -54,8 +54,6 @@ class PlayerObj(threading.Thread):
             return " ".join( ",".join(x) for x in batch)
 
         bat = []
-        #Gamecube Sound
-        bat.append(batToString(csvToSong("gamecube.csv")))
         #Mario!!!
         bat.append("e,1,1 e,1,1 e,3,0 c,1,0 e,2,0 g,1,2 lg,3,0")
         #That Rally Call tune

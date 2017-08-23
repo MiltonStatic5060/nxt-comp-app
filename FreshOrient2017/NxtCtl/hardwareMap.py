@@ -28,9 +28,9 @@ class Servo(ServoCon):
         self.servoport = servoport
     def set_pos(self, pos):
         """pos(position) is originally (0 to 255)
-        use decimal value 0 to 1.0"""
-        super(Servo,self).set_pos(self.servoport, pos*255.0)
+        """
+        super(Servo,self).set_pos(self.servoport, pos)
     def setPosition(self, pos):
         """pos(position) is originally (0 to 255)
-        use decimal value 0 to 1.0"""
+        """
         self.set_pos(pos)
