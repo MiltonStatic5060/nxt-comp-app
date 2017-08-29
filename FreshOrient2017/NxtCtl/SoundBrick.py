@@ -54,10 +54,13 @@ class PlayerObj(threading.Thread):
             return " ".join( ",".join(x) for x in batch)
 
         bat = []
+
         #Mario!!!
         bat.append("e,1,1 e,1,1 e,3,0 c,1,0 e,2,0 g,1,2 lg,3,0")
         #That Rally Call tune
         bat.append("d,1,1 d,2,0 f#,2,0 ha,3,0 f#,1,0 ha,3,0")
+        #the Windows I Screwed Up noise
+        bat.append("lb,1,1 lb,2,0")
         #Sad noise when mistakes are made
         bat.append("g,1,0 f#,1,0 f,1,0 e,3,0")
         #mario got a coin noise
@@ -65,8 +68,6 @@ class PlayerObj(threading.Thread):
         bat.append("a,1,0 c,1,0 e,1,0 ha,1,0")
         #question noise
         bat.append("a,1,0 f,1,0 e,1,0")
-        #the Windows I Screwed Up noise
-        bat.append("lb,1,1 lb,2,0")
 
         batchArr = [arr.split(",") for arr in bat[batchNum].split(" ")]
 

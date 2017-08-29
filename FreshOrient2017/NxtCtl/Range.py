@@ -4,9 +4,9 @@ def clip(VAL,MIN,MAX):
         return MIN
     elif(VAL>MAX):
         return MAX
-    elif(VAL==MIN):
+    elif(isNear(VAL,MIN,0.005)):  #elif(VAL==MIN):
         return MIN
-    elif(VAL==MAX):
+    elif(isNear(VAL,MAX,0.005)):  #elif(VAL==MAX):
         return MAX
     else:
         return round(VAL,2)

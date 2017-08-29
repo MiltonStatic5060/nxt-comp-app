@@ -8,7 +8,7 @@ class DcMotor(MotorCon):
     def set_power(self,power):
         """power is originally -100 to 100
         use decimal value -1 to 1"""
-        super(DcMotor,self).set_power(motorport,power*100.0)
+        super(DcMotor,self).set_power(self.motorport,power*100.0)
     def setPower(self,power):
         """power is originally -100 to 100
         use decimal value -1 to 1"""
@@ -16,7 +16,7 @@ class DcMotor(MotorCon):
     def get_power(self):
         """power is originally -100 to 100
         return decimal value -1 to 1"""
-        return super(DcMotor,self).get_power(motorport)/100.0
+        return super(DcMotor,self).get_power(self.motorport)/100.0
     def getPower(self,power):
         """power is originally -100 to 100
         return decimal value -1 to 1"""

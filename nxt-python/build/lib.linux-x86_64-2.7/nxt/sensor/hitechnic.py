@@ -459,23 +459,24 @@ and can be converted into a list of bools or an integer."""
         self.write_value('digital_cont', (int(modes), ))
 
 Prototype.add_compatible_sensor(None, 'HiTechnc', 'Proto   ')
-import struct
+
+
 class ServoCon(BaseDigitalSensor):
     """Object for HiTechnic FIRST Servo Controllers. Coded to HiTechnic's specs for
 the sensor but not tested. Please report whether this worked for you or not!"""
     I2C_ADDRESS = BaseDigitalSensor.I2C_ADDRESS.copy()
     I2C_ADDRESS.update({
         'status': (0x40, 'B'),
-        'steptime': (0x40, 'B'),
-        's1pos': (0x41, 'B'),
-        's2pos': (0x42, 'B'),
-        's3pos': (0x43, 'B'),
-        's4pos': (0x44, 'B'),
-        's5pos': (0x45, 'B'),
-        's6pos': (0x46, 'B'),
-        'pwm': (0x48, 'B'), #Change by auryan898
+        'steptime': (0x41, 'B'),
+        's1pos': (0x42, 'B'),
+        's2pos': (0x43, 'B'),
+        's3pos': (0x44, 'B'),
+        'p4pos': (0x45, 'B'),
+        'p5pos': (0x46, 'B'),
+        'p6pos': (0x47, 'B'),
+        'pwm': (0x48, 'B'),
     })
-    
+
     class Status:
         RUNNING = 0x00 #all motors stopped
         STOPPED = 0x01 #motor(s) moving
@@ -483,50 +484,9 @@ the sensor but not tested. Please report whether this worked for you or not!"""
     def __init__(self, brick, port, check_compatible=True):
         super(ServoCon, self).__init__(brick, port, check_compatible)
 
-    def write_value_r(self, name, value):
-        """Writes value to the sensor. Name must be a string found in
-        self.I2C_ADDRESS dictionary. Entries in self.I2C_ADDRESS are in the
-        name: (address, format) form, with format as in the struct module.
-        value is a tuple of values corresponding to the format from
-        self.I2C_ADDRESS dictionary.
-        """
-        self.DATA[name] = value
-        arr = []
-        for key in sorted(self.DATA):
-            address, fmt = self.I2C_ADDRESS[key]
-            arr.append( (address,self.DATA[key],fmt) )
-        self._i2c_command_r(arr)
-
-    def _i2c_command_r(self,options=[]):
-        from time import time, sleep
-        """Writes an i2c value to the given address. value must be a string. value is
-        a tuple of values corresponding to the given format.
-        """
-        msg = chr(self.I2C_DEV)
-        #options contains tuple of address, value, format
-        for tup in options:
-            address, value, format = tup
-            val = struct.pack(format, *value)
-            msg += chr(address) + val
-        now = time()
-        if self.last_poll+self.poll_delay > now:
-            diff = now - self.last_poll
-            sleep(self.poll_delay - diff)
-        self.last_poll = time()
-
-        #DEBUGGING
-        msg0 = chr(self.I2C_DEV)
-        #options contains tuple of address, value, format
-        for i, (address, value, format) in enumerate(options):
-            val = struct.pack(format, *value)
-            msg0 += chr(address) + str(val)
-        print msg0
-
-        self.brick.ls_write(self.port, msg, 0)
-
     def get_status(self):
         """Returns the status of the motors. 0 for all stopped, 1 for
-        some running.
+some running.
         """
         return self.read_value('status')[0]
 
@@ -536,12 +496,9 @@ the sensor but not tested. Please report whether this worked for you or not!"""
         self.write_value('steptime', (time, ))
 
     def set_pos(self, num, pos):
-        """Sets the position of a servo. num is the servo number (1-6),
-        pos is the position (0-255).
+        """Sets the position of a server. num is the servo number (1-6),
+pos is the position (0-255).
         """
-        # change POSITIONS dictionary
-
-        # use i2c_command_r to send POSITIONS dictionary
         self.write_value('s%dpos' % num, (pos, ))
 
     def get_pwm(self):
@@ -553,9 +510,6 @@ nontrivial and can be found in the documentation for the sensor.
     def set_pwm(self, pwm):
         """Sets the "PWM enable" value. The function of this value is
 nontrivial and can be found in the documentation for the sensor.
-        255 = disabled
-        0 = pwm enabled 10 second timeout
-        170 = pwm enabled no timeout for enabled
         """
         self.write_value('pwm', (pwm, ))
 
