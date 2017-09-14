@@ -8,49 +8,44 @@ import nxt.bluesock # Make sure you remember this!
 from nxt.sensor.hitechnic import *
 
 #--Initialize--
-#b = nxt.bluesock.BlueSock('00:16:53:16:12:02').connect() #5060-S
-b = nxt.bluesock.BlueSock('00:16:53:10:22:3D').connect() #5060
+b = nxt.bluesock.BlueSock('00:16:53:16:12:02').connect() #5060-S
+#b = nxt.bluesock.BlueSock('00:16:53:10:22:3D').connect() #5060
 gamepadA = gamepad1
 gamepadB = gamepad2
 
-#Front motors?
-motorRight = hardwareMap.DcMotor( b, nxt.PORT_1, 1)
-motorLeft = hardwareMap.DcMotor( b, nxt.PORT_1, 2)
-#Back motors?
-motorRight1 = hardwareMap.DcMotor( b, nxt.PORT_2, 1)
-motorLeft1 = hardwareMap.DcMotor( b, nxt.PORT_2, 2)
+# #Front motors
+# motorRight = hardwareMap.DcMotor( b, nxt.PORT_1, 1)
+# motorLeft = hardwareMap.DcMotor( b, nxt.PORT_1, 2)
+# #Back motors
+# motorRight1 = hardwareMap.DcMotor( b, nxt.PORT_2, 1)
+# motorLeft1 = hardwareMap.DcMotor( b, nxt.PORT_2, 2)
 
 #Block Grabber
+ServoCon(b,PORT_4).set_pwm(0)
 blockGrabL = hardwareMap.Servo( b, nxt.PORT_4, 1)
 blockGrabR = hardwareMap.Servo( b, nxt.PORT_4, 2)
 blockLift = hardwareMap.DcMotor( b, nxt.PORT_3, 1)
-ENCODERACTIVE = False
+
+blockLift.set_mode(4) # reset encoder
 
 def r_grabber():
     #blockGrabL blockGrabR blockLift
     right_trigger = gamepadA.right_trigger
-    blockGrabL.setPosition(Range.clip(right_trigger*255,0,255))
-    blockGrabR.setPosition(Range.clip(right_trigger*255,0,255))
-    
+    blockGrabL.setPosition(Range.clip(right_trigger*255,0,255-80))
+    blockGrabR.setPosition(Range.clip((1.0-right_trigger)*255,80,255))
+    global ENCODERACTIVE
     #TEMPORARY
-    if(ENCODERACTIVE):
-        blockLift.set_enc_target(gamepadA.left_trigger*1000)
-    else:
-        right_stick_y = gamepadA.right_stick_y
-        blockLift.setPower(right_stick_y/2)
+    right_stick_y = gamepadA.right_stick_y
+    blockLift.setPower(0.5)
+    blockLift.set_enc_target(gamepadA.left_trigger*1800)
+    blockLift.set_mode(3)
 
     print blockLift.get_enc_current(),
-    print blockLift.get_enc_target()
-    if(gamepadA.y and not gamepadA.start):
-        blockLift.set_enc_target(500) # int value
-    if(gamepadA.b and not gamepadA.start):
-        blockLift.set_mode(4) # reset encoder
-    if(gamepadA.a and not gamepadA.start):
-        blockLift.set_mode(1) # power control
-    if(gamepadA.x and not gamepadA.start):
-        blockLift.set_mode(3) # run to position
+    print blockLift.get_enc_target(),
+    print blockLift.get_battery_voltage()
+
     if(gamepadA.back):
-        ENCODERACTIVE = True
+        blockLift.set_mode(4) # reset encoder
 
 
 def r_motorPower(): # Multicontroller admin-dpad&left_stick user-left_stick
@@ -85,7 +80,7 @@ def r_motorPower(): # Multicontroller admin-dpad&left_stick user-left_stick
 
 while 1:
     pass
-    r_motorPower()
+    # r_motorPower()
     r_grabber()
     if(gamepadA.left_stick_button or gamepadA.right_stick_button):
         print blockLift.get_battery_voltage()
