@@ -42,7 +42,7 @@ def r_grabber():
     print blockLift.get_enc_current(),
     print blockLift.get_enc_target()
     if(gamepadA.y and not gamepadA.start):
-        blockLift.set_enc_target(40) # int value
+        blockLift.set_enc_target(500) # int value
     if(gamepadA.b and not gamepadA.start):
         blockLift.set_mode(4) # reset encoder
     if(gamepadA.a and not gamepadA.start):
@@ -85,5 +85,7 @@ def r_motorPower(): # Multicontroller admin-dpad&left_stick user-left_stick
 
 while 1:
     pass
-    # r_motorPower()
-    # r_grabber
+    r_motorPower()
+    r_grabber()
+    if(gamepadA.left_stick_button or gamepadA.right_stick_button):
+        print blockLift.get_battery_voltage()
