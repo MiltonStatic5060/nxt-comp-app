@@ -27,6 +27,8 @@ blockGrabR = hardwareMap.Servo( b, nxt.PORT_4, 2)
 blockLift = hardwareMap.DcMotor( b, nxt.PORT_3, 1)
 
 blockLift.set_mode(4) # reset encoder
+blockLift.set_enc_target(0) # set target to 0
+blockLift.set_mode(3) # run to position
 
 def r_grabber():
     #blockGrabL blockGrabR blockLift
@@ -38,11 +40,9 @@ def r_grabber():
     right_stick_y = gamepadA.right_stick_y
     blockLift.setPower(0.5)
     blockLift.set_enc_target(gamepadA.left_trigger*1800)
-    blockLift.set_mode(3)
 
     print blockLift.get_enc_current(),
-    print blockLift.get_enc_target(),
-    print blockLift.get_battery_voltage()
+    print blockLift.get_enc_target()
 
     if(gamepadA.back):
         blockLift.set_mode(4) # reset encoder
@@ -79,8 +79,9 @@ def r_motorPower(): # Multicontroller admin-dpad&left_stick user-left_stick
     motorLeft1.setPower(powLeft1)
 
 while 1:
-    pass
     # r_motorPower()
     r_grabber()
     if(gamepadA.left_stick_button or gamepadA.right_stick_button):
-        print blockLift.get_battery_voltage()
+        print "Voltage:",
+        print blockLift.get_battery_voltage(),
+        print "V",
