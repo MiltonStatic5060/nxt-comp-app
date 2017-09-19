@@ -604,7 +604,7 @@ MotorCon.PID_Data(p, i, d) format.
     def get_battery_voltage(self):
         """Gets the battery voltage (in millivolts/20)
         """
-        high, low = self.read_value('bateryvoltage')[0]
+        high, low = self.read_value('batteryvoltage')[0]
         return high << 2 + low
 
 MotorCon.add_compatible_sensor(None, 'HiTechnc', 'MotorCon')

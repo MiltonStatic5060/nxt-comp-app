@@ -9,6 +9,15 @@ from nxt.sensor.hitechnic import *
 
 #--Initialize--
 #b = nxt.bluesock.BlueSock('00:16:53:16:12:02').connect() #5060-S
-b = nxt.bluesock.BlueSock('00:16:53:10:22:3D').connect() #5060
+#b = nxt.bluesock.BlueSock('00:16:53:10:22:3D').connect() #5060
+
 gamepadA = gamepad1
 gamepadB = gamepad2
+
+#Initialization
+
+
+
+while True:
+    #Loop
+    
