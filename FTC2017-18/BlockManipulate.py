@@ -8,8 +8,8 @@ import nxt.bluesock # Make sure you remember this!
 from nxt.sensor.hitechnic import *
 
 #--Initialize--
-# b = nxt.bluesock.BlueSock('00:16:53:16:12:02').connect() #5060-S
-b = nxt.bluesock.BlueSock('00:16:53:10:22:3D').connect() #5060
+b = nxt.bluesock.BlueSock('00:16:53:16:12:02').connect() #5060-S
+# b = nxt.bluesock.BlueSock('00:16:53:10:22:3D').connect() #5060
 gamepadA = gamepad1
 gamepadB = gamepad2
 
@@ -30,15 +30,16 @@ blockLift.set_mode(4) # reset encoder
 blockLift.set_enc_target(0) # set target to 0
 blockLift.set_mode(3) # run to position
 
+blockLift.setPower(0.5)
 def r_grabber():
     #blockGrabL blockGrabR blockLift
     right_trigger = gamepadA.right_trigger
     blockGrabL.setPosition(Range.clip(right_trigger*255,0,255-100))
     blockGrabR.setPosition(Range.clip((1.0-right_trigger)*255,100,255))
-    global ENCODERACTIVE
+    
     #TEMPORARY
     right_stick_y = gamepadA.right_stick_y
-    blockLift.setPower(0.5)
+    
     blockLift.set_enc_target(gamepadA.left_trigger*-2880)
 
     # print blockLift.get_enc_current(),
@@ -82,7 +83,7 @@ def r_motorPower(): # Multicontroller admin-dpad&left_stick user-left_stick
 while 1:
     r_motorPower()
     r_grabber()
-    if(gamepadA.left_stick_button or gamepadA.right_stick_button):
-        print "Voltage:",
-        print blockLift.get_battery_voltage(),
-        print "V",
+    # if(gamepadA.left_stick_button or gamepadA.right_stick_button):
+    #     print "Voltage:",
+    #     print blockLift.get_battery_voltage(),
+    #     print "V",
