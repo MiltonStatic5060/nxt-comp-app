@@ -22,12 +22,15 @@ ANGLE	../nxt-python/nxt/sensor/common.py	/^    ANGLE = 0x04$/;"	kind:variable	li
 ANGLE_STEPS	../nxt-python/nxt/sensor/common.py	/^    ANGLE_STEPS = 0xE0$/;"	kind:variable	line:54
 ARG1	../FTC2017-18/NxtCtl/SoundBrick.py	/^    ARG1 = None$/;"	kind:variable	line:32
 ARG1	../FreshOrient2017/NxtCtl/SoundBrick.py	/^    ARG1 = None$/;"	kind:variable	line:32
+ARG1	../TestFTC2017/NxtCtl/SoundBrick.py	/^    ARG1 = None$/;"	kind:variable	line:32
 ARG1	../opmodes/NxtCtl/SoundBrick.py	/^    ARG1 = None$/;"	kind:variable	line:31
 ARG2	../FTC2017-18/NxtCtl/SoundBrick.py	/^    ARG2 = None$/;"	kind:variable	line:33
 ARG2	../FreshOrient2017/NxtCtl/SoundBrick.py	/^    ARG2 = None$/;"	kind:variable	line:33
+ARG2	../TestFTC2017/NxtCtl/SoundBrick.py	/^    ARG2 = None$/;"	kind:variable	line:33
 ARG2	../opmodes/NxtCtl/SoundBrick.py	/^    ARG2 = None$/;"	kind:variable	line:32
 ARG3	../FTC2017-18/NxtCtl/SoundBrick.py	/^    ARG3 = None$/;"	kind:variable	line:34
 ARG3	../FreshOrient2017/NxtCtl/SoundBrick.py	/^    ARG3 = None$/;"	kind:variable	line:34
+ARG3	../TestFTC2017/NxtCtl/SoundBrick.py	/^    ARG3 = None$/;"	kind:variable	line:34
 ARG3	../opmodes/NxtCtl/SoundBrick.py	/^    ARG3 = None$/;"	kind:variable	line:33
 ASCII_MODE	../nxt-python/nxt/sensor/mindsensors.py	/^        ASCII_MODE = 'A'$/;"	kind:variable	line:728
 AUTO_TRIG_OFF	../nxt-python/nxt/sensor/mindsensors.py	/^        AUTO_TRIG_OFF = 'S'$/;"	kind:variable	line:80
@@ -99,6 +102,7 @@ DATA	../nxt-python/nxt/telegram.py	/^    DATA = 2    # data byte offset$/;"	kind
 DCData	../nxt-python/nxt/sensor/hitechnic.py	/^    class DCData(_data):$/;"	kind:class	line:201
 DEVICES	../FTC2017-18/NxtCtl/incomplete/hardwareMap.py	/^    DEVICES = []$/;"	kind:variable	line:4
 DEVICES	../FreshOrient2017/NxtCtl/incomplete/hardwareMap.py	/^    DEVICES = []$/;"	kind:variable	line:4
+DEVICES	../TestFTC2017/NxtCtl/incomplete/hardwareMap.py	/^    DEVICES = []$/;"	kind:variable	line:4
 DEVICES	../opmodes/NxtCtl/incomplete/hardwareMap.py	/^    DEVICES = []$/;"	kind:variable	line:4
 DIGITAL_MODE	../nxt-python/nxt/sensor/mindsensors.py	/^        DIGITAL_MODE = 'A'$/;"	kind:variable	line:786
 DIRECT_MODE	../nxt-python/nxt/sensor/mindsensors.py	/^        DIRECT_MODE = 'D'$/;"	kind:variable	line:729
@@ -107,6 +111,7 @@ DONE_CALIBRATION	../nxt-python/nxt/sensor/mindsensors.py	/^        DONE_CALIBRAT
 DSPModes	../nxt-python/nxt/sensor/hitechnic.py	/^    class DSPModes:$/;"	kind:class	line:187
 DcMotor	../FTC2017-18/NxtCtl/hardwareMap.py	/^class DcMotor(MotorCon):$/;"	kind:class	line:4
 DcMotor	../FreshOrient2017/NxtCtl/hardwareMap.py	/^class DcMotor(MotorCon):$/;"	kind:class	line:4
+DcMotor	../TestFTC2017/NxtCtl/hardwareMap.py	/^class DcMotor(MotorCon):$/;"	kind:class	line:4
 DiagApp	../graphics/diag.py	/^class DiagApp(App):$/;"	kind:class	line:20
 DiagWindow	../graphics/diag.py	/^class DiagWindow(StackLayout):$/;"	kind:class	line:11
 Digital_Data	../nxt-python/nxt/sensor/hitechnic.py	/^    class Digital_Data():$/;"	kind:class	line:410
@@ -125,6 +130,7 @@ FREQ_50	../nxt-python/nxt/sensor/hitechnic.py	/^        FREQ_50 = 0x35 #saved in
 FREQ_60	../nxt-python/nxt/sensor/hitechnic.py	/^        FREQ_60 = 0x36 #saved in EEPROM, use when local wall power is 60Hz$/;"	kind:variable	line:328
 FREQ_C	../FTC2017-18/NxtCtl/SoundBrick.py	/^FREQ_C = 440$/;"	kind:variable	line:13
 FREQ_C	../FreshOrient2017/NxtCtl/SoundBrick.py	/^FREQ_C = 440$/;"	kind:variable	line:13
+FREQ_C	../TestFTC2017/NxtCtl/SoundBrick.py	/^FREQ_C = 440$/;"	kind:variable	line:13
 FREQ_C	../examples/mary.py	/^FREQ_C = 523$/;"	kind:variable	line:10
 FREQ_C	../nxt-python/examples/mary.py	/^FREQ_C = 523$/;"	kind:variable	line:10
 FREQ_C	../opmodes/NxtCtl/SoundBrick.py	/^FREQ_C = 440$/;"	kind:variable	line:13
@@ -132,6 +138,7 @@ FREQ_D	../examples/mary.py	/^FREQ_D = 587$/;"	kind:variable	line:11
 FREQ_D	../nxt-python/examples/mary.py	/^FREQ_D = 587$/;"	kind:variable	line:11
 FREQ_E	../FTC2017-18/NxtCtl/SoundBrick.py	/^FREQ_E = 659$/;"	kind:variable	line:12
 FREQ_E	../FreshOrient2017/NxtCtl/SoundBrick.py	/^FREQ_E = 659$/;"	kind:variable	line:12
+FREQ_E	../TestFTC2017/NxtCtl/SoundBrick.py	/^FREQ_E = 659$/;"	kind:variable	line:12
 FREQ_E	../examples/mary.py	/^FREQ_E = 659$/;"	kind:variable	line:12
 FREQ_E	../nxt-python/examples/mary.py	/^FREQ_E = 659$/;"	kind:variable	line:12
 FREQ_E	../opmodes/NxtCtl/SoundBrick.py	/^FREQ_E = 659$/;"	kind:variable	line:12
@@ -139,6 +146,7 @@ FREQ_G	../examples/mary.py	/^FREQ_G = 784$/;"	kind:variable	line:13
 FREQ_G	../nxt-python/examples/mary.py	/^FREQ_G = 784$/;"	kind:variable	line:13
 FUNC_TYPE	../FTC2017-18/NxtCtl/SoundBrick.py	/^    FUNC_TYPE = 0$/;"	kind:variable	line:31
 FUNC_TYPE	../FreshOrient2017/NxtCtl/SoundBrick.py	/^    FUNC_TYPE = 0$/;"	kind:variable	line:31
+FUNC_TYPE	../TestFTC2017/NxtCtl/SoundBrick.py	/^    FUNC_TYPE = 0$/;"	kind:variable	line:31
 FUNC_TYPE	../opmodes/NxtCtl/SoundBrick.py	/^    FUNC_TYPE = 0$/;"	kind:variable	line:30
 File	../nxt-python/nxt/brick.py	/^def File(brick, name, mode='r', size=None):$/;"	kind:function	line:82
 FileExistsError	../nxt-python/nxt/error.py	/^class FileExistsError(SysProtError):$/;"	kind:class	line:23
@@ -150,9 +158,11 @@ GET	../FreshOrient2017/archive/webCode.py	/^    def GET(self):$/;"	kind:member	l
 GET	../FreshOrient2017/archive/webCode.py	/^    def GET(self, name):$/;"	kind:member	line:13
 GameGraphics.py	../FTC2017-18/NxtCtl/GameGraphics.py	1;"	kind:file	line:1
 GameGraphics.py	../FreshOrient2017/NxtCtl/GameGraphics.py	1;"	kind:file	line:1
+GameGraphics.py	../TestFTC2017/NxtCtl/GameGraphics.py	1;"	kind:file	line:1
 GameGraphics.py	../opmodes/NxtCtl/GameGraphics.py	1;"	kind:file	line:1
 GamePad.py	../FTC2017-18/NxtCtl/GamePad.py	1;"	kind:file	line:1
 GamePad.py	../FreshOrient2017/NxtCtl/GamePad.py	1;"	kind:file	line:1
+GamePad.py	../TestFTC2017/NxtCtl/GamePad.py	1;"	kind:file	line:1
 GamePad.py	../graphics/GamePad.py	1;"	kind:file	line:1
 GamePad.py	../nxt-python/nxt/GamePad.py	1;"	kind:file	line:1
 GamePad.py	../opmodes/NxtCtl/GamePad.py	1;"	kind:file	line:1
@@ -172,6 +182,7 @@ HTIRSeekerv2	../nxt-python/nxt/sensor/__init__.py	/^HTIRSeekerv2 = hitechnic.IRS
 HTPrototype	../nxt-python/nxt/sensor/__init__.py	/^HTPrototype = hitechnic.Prototype$/;"	kind:variable	line:40
 HardwareMap	../FTC2017-18/NxtCtl/incomplete/hardwareMap.py	/^class HardwareMap(object):$/;"	kind:class	line:3
 HardwareMap	../FreshOrient2017/NxtCtl/incomplete/hardwareMap.py	/^class HardwareMap(object):$/;"	kind:class	line:3
+HardwareMap	../TestFTC2017/NxtCtl/incomplete/hardwareMap.py	/^class HardwareMap(object):$/;"	kind:class	line:3
 HardwareMap	../opmodes/NxtCtl/incomplete/hardwareMap.py	/^class HardwareMap(object):$/;"	kind:class	line:3
 I2CError	../nxt-python/nxt/error.py	/^class I2CError(DirProtError):$/;"	kind:class	line:35
 I2CPendingError	../nxt-python/nxt/error.py	/^class I2CPendingError(I2CError):$/;"	kind:class	line:38
@@ -218,6 +229,7 @@ LIMIT_RUN_FOREVER	../nxt-python/nxt/motor.py	/^LIMIT_RUN_FOREVER = 0$/;"	kind:va
 LOAD_USER_CALIBRATION	../nxt-python/nxt/sensor/mindsensors.py	/^        LOAD_USER_CALIBRATION = 'L' # load user calibration value$/;"	kind:variable	line:89
 LOW_SPEED	../nxt-python/nxt/sensor/common.py	/^    LOW_SPEED = 0x0A$/;"	kind:variable	line:33
 LOW_SPEED_9V	../nxt-python/nxt/sensor/common.py	/^    LOW_SPEED_9V = 0x0B # Low-speed I2C (Ultrasonic sensor)$/;"	kind:variable	line:34
+Lego1.py	../TestFTC2017/Lego1.py	1;"	kind:file	line:1
 Light	../nxt-python/nxt/sensor/generic.py	/^class Light(BaseAnalogSensor):$/;"	kind:class	line:34
 LineLeader	../nxt-python/nxt/sensor/mindsensors.py	/^class LineLeader(BaseDigitalSensor):$/;"	kind:class	line:395
 LineLeader.py	../examples/mindsensors/LineLeader.py	1;"	kind:file	line:1
@@ -274,6 +286,7 @@ OPCODES	../nxt-python/nxt/system.py	/^OPCODES = {$/;"	kind:variable	line:273
 OPCODES	../nxt-python/nxt/telegram.py	/^OPCODES = dict(nxt.system.OPCODES)$/;"	kind:variable	line:119
 OpMode.py	../FTC2017-18/NxtCtl/OpMode.py	1;"	kind:file	line:1
 OpMode.py	../FreshOrient2017/NxtCtl/OpMode.py	1;"	kind:file	line:1
+OpMode.py	../TestFTC2017/NxtCtl/OpMode.py	1;"	kind:file	line:1
 OpMode.py	../opmodes/NxtCtl/OpMode.py	1;"	kind:file	line:1
 OutputState	../nxt-python/nxt/motor.py	/^class OutputState(object):$/;"	kind:class	line:44
 PASSIVE	../nxt-python/nxt/sensor/hitechnic.py	/^        PASSIVE = 0x01 #get measurements using get_passive_color$/;"	kind:variable	line:319
@@ -301,9 +314,11 @@ PS2.py	../nxt-python/examples/mindsensors/PS2.py	1;"	kind:file	line:1
 PassiveData	../nxt-python/nxt/sensor/hitechnic.py	/^    class PassiveData:$/;"	kind:class	line:334
 Player	../FTC2017-18/NxtCtl/SoundBrick.py	/^class Player(object):$/;"	kind:class	line:108
 Player	../FreshOrient2017/NxtCtl/SoundBrick.py	/^class Player(object):$/;"	kind:class	line:108
+Player	../TestFTC2017/NxtCtl/SoundBrick.py	/^class Player(object):$/;"	kind:class	line:108
 Player	../opmodes/NxtCtl/SoundBrick.py	/^class Player(object):$/;"	kind:class	line:99
 PlayerObj	../FTC2017-18/NxtCtl/SoundBrick.py	/^class PlayerObj(threading.Thread):$/;"	kind:class	line:30
 PlayerObj	../FreshOrient2017/NxtCtl/SoundBrick.py	/^class PlayerObj(threading.Thread):$/;"	kind:class	line:30
+PlayerObj	../TestFTC2017/NxtCtl/SoundBrick.py	/^class PlayerObj(threading.Thread):$/;"	kind:class	line:30
 PlayerObj	../opmodes/NxtCtl/SoundBrick.py	/^class PlayerObj(threading.Thread):$/;"	kind:class	line:29
 PongApp	../graphics/main.py	/^class PongApp(App):$/;"	kind:class	line:65
 PongBall	../graphics/main.py	/^class PongBall(Widget):$/;"	kind:class	line:21
@@ -335,6 +350,7 @@ RUN_STATE_RAMP_UP	../nxt-python/nxt/motor.py	/^RUN_STATE_RAMP_UP = 0x10$/;"	kind
 RUN_STATE_RUNNING	../nxt-python/nxt/motor.py	/^RUN_STATE_RUNNING = 0x20$/;"	kind:variable	line:36
 Range.py	../FTC2017-18/NxtCtl/Range.py	1;"	kind:file	line:1
 Range.py	../FreshOrient2017/NxtCtl/Range.py	1;"	kind:file	line:1
+Range.py	../TestFTC2017/NxtCtl/Range.py	1;"	kind:file	line:1
 Range.py	../graphics/Range.py	1;"	kind:file	line:1
 Range.py	../nxt-python/nxt/Range.py	1;"	kind:file	line:1
 Range.py	../opmodes/NxtCtl/Range.py	1;"	kind:file	line:1
@@ -371,6 +387,7 @@ Sensor	../nxt-python/nxt/sensor/common.py	/^class Sensor(object):$/;"	kind:class
 SensorInfo	../nxt-python/nxt/sensor/digital.py	/^class SensorInfo:$/;"	kind:class	line:23
 Servo	../FTC2017-18/NxtCtl/hardwareMap.py	/^class Servo(ServoCon):$/;"	kind:class	line:41
 Servo	../FreshOrient2017/NxtCtl/hardwareMap.py	/^class Servo(ServoCon):$/;"	kind:class	line:25
+Servo	../TestFTC2017/NxtCtl/hardwareMap.py	/^class Servo(ServoCon):$/;"	kind:class	line:41
 Servo	../nxt-python/nxt/sensor/mindsensors.py	/^class Servo(BaseDigitalSensor):$/;"	kind:class	line:499
 Servo.py	../examples/mindsensors/Servo.py	1;"	kind:file	line:1
 Servo.py	../nxt-python/examples/mindsensors/Servo.py	1;"	kind:file	line:1
@@ -378,6 +395,7 @@ ServoCon	../nxt-python/nxt/sensor/hitechnic.py	/^class ServoCon(BaseDigitalSenso
 Sound	../nxt-python/nxt/sensor/generic.py	/^class Sound(BaseAnalogSensor):$/;"	kind:class	line:54
 SoundBrick.py	../FTC2017-18/NxtCtl/SoundBrick.py	1;"	kind:file	line:1
 SoundBrick.py	../FreshOrient2017/NxtCtl/SoundBrick.py	1;"	kind:file	line:1
+SoundBrick.py	../TestFTC2017/NxtCtl/SoundBrick.py	1;"	kind:file	line:1
 SoundBrick.py	../opmodes/NxtCtl/SoundBrick.py	1;"	kind:file	line:1
 SpeedReading	../nxt-python/nxt/sensor/hitechnic.py	/^    class SpeedReading:$/;"	kind:class	line:136
 Status	../nxt-python/nxt/sensor/hitechnic.py	/^    class Status:$/;"	kind:class	line:480
@@ -401,6 +419,7 @@ TachoInfo	../nxt-python/nxt/motor.py	/^class TachoInfo:$/;"	kind:class	line:76
 Telegram	../nxt-python/nxt/telegram.py	/^class Telegram(object):$/;"	kind:class	line:27
 TextDisplay	../FTC2017-18/NxtCtl/GameGraphics.py	/^class TextDisplay(object):$/;"	kind:class	line:6
 TextDisplay	../FreshOrient2017/NxtCtl/GameGraphics.py	/^class TextDisplay(object):$/;"	kind:class	line:6
+TextDisplay	../TestFTC2017/NxtCtl/GameGraphics.py	/^class TextDisplay(object):$/;"	kind:class	line:6
 TextDisplay	../opmodes/NxtCtl/GameGraphics.py	/^class TextDisplay(object):$/;"	kind:class	line:5
 Touch	../nxt-python/nxt/sensor/generic.py	/^class Touch(BaseAnalogSensor):$/;"	kind:class	line:21
 Type	../nxt-python/nxt/sensor/common.py	/^class Type(object):$/;"	kind:class	line:20
@@ -446,6 +465,14 @@ __init__	../FreshOrient2017/NxtCtl/SoundBrick.py	/^    def __init__(self,brick):
 __init__	../FreshOrient2017/NxtCtl/hardwareMap.py	/^    def __init__(self, brick, port, motorport):$/;"	kind:member	line:5
 __init__	../FreshOrient2017/NxtCtl/hardwareMap.py	/^    def __init__(self, brick, port, servoport):$/;"	kind:member	line:26
 __init__	../FreshOrient2017/NxtCtl/incomplete/hardwareMap.py	/^    def __init__(self,map):$/;"	kind:member	line:6
+__init__	../TestFTC2017/NxtCtl/GameGraphics.py	/^    def __init__(self,name):$/;"	kind:member	line:7
+__init__	../TestFTC2017/NxtCtl/GamePad.py	/^    def __init__(self, x=None):$/;"	kind:member	line:5
+__init__	../TestFTC2017/NxtCtl/GamePad.py	/^    def __init__(self,n):$/;"	kind:member	line:165
+__init__	../TestFTC2017/NxtCtl/SoundBrick.py	/^    def __init__(self):$/;"	kind:member	line:35
+__init__	../TestFTC2017/NxtCtl/SoundBrick.py	/^    def __init__(self,brick):$/;"	kind:member	line:109
+__init__	../TestFTC2017/NxtCtl/hardwareMap.py	/^    def __init__(self, brick, port, motorport):$/;"	kind:member	line:5
+__init__	../TestFTC2017/NxtCtl/hardwareMap.py	/^    def __init__(self, brick, port, servoport):$/;"	kind:member	line:42
+__init__	../TestFTC2017/NxtCtl/incomplete/hardwareMap.py	/^    def __init__(self,map):$/;"	kind:member	line:6
 __init__	../examples/alpharex.py	/^    def __init__(self, brick='NXT'):$/;"	kind:member	line:31
 __init__	../graphics/GamePad.py	/^    def __init__(self, x=None):$/;"	kind:member	line:8
 __init__	../graphics/GamePad.py	/^    def __init__(self,n):$/;"	kind:member	line:133
@@ -518,6 +545,7 @@ __init__	../opmodes/NxtCtl/SoundBrick.py	/^    def __init__(self,brick):$/;"	kin
 __init__	../opmodes/NxtCtl/incomplete/hardwareMap.py	/^    def __init__(self,map):$/;"	kind:member	line:6
 __init__.py	../FTC2017-18/NxtCtl/__init__.py	1;"	kind:file	line:1
 __init__.py	../FreshOrient2017/NxtCtl/__init__.py	1;"	kind:file	line:1
+__init__.py	../TestFTC2017/NxtCtl/__init__.py	1;"	kind:file	line:1
 __init__.py	../nxt-python/nxt/__init__.py	1;"	kind:file	line:1
 __init__.py	../nxt-python/nxt/sensor/__init__.py	1;"	kind:file	line:1
 __init__.py	../opmodes/NxtCtl/__init__.py	1;"	kind:file	line:1
@@ -597,9 +625,11 @@ _set_state	../nxt-python/nxt/motor.py	/^    def _set_state(self, state):$/;"	kin
 _tacho	../nxt-python/nxt/motcont.py	/^def _tacho(tacholimit):$/;"	kind:function	line:31
 a	../FTC2017-18/NxtCtl/GamePad.py	/^    a = False #BTN_SOUTH$/;"	kind:variable	line:143
 a	../FreshOrient2017/NxtCtl/GamePad.py	/^    a = False #BTN_SOUTH$/;"	kind:variable	line:143
+a	../TestFTC2017/NxtCtl/GamePad.py	/^    a = False #BTN_SOUTH$/;"	kind:variable	line:143
 a	../nxt-python/nxt/GamePad.py	/^    a = False #BTN_SOUTH$/;"	kind:variable	line:143
 addData	../FTC2017-18/NxtCtl/GameGraphics.py	/^    def addData(self,input0,input1=""):$/;"	kind:member	line:13
 addData	../FreshOrient2017/NxtCtl/GameGraphics.py	/^    def addData(self,input0,input1=""):$/;"	kind:member	line:13
+addData	../TestFTC2017/NxtCtl/GameGraphics.py	/^    def addData(self,input0,input1=""):$/;"	kind:member	line:13
 addData	../opmodes/NxtCtl/GameGraphics.py	/^    def addData(self,input0,input1=""):$/;"	kind:member	line:12
 add_compatible_sensor	../nxt-python/nxt/sensor/digital.py	/^    def add_compatible_sensor(cls, version, product_id, sensor_type):$/;"	kind:member	line:161
 add_filename	../nxt-python/nxt/telegram.py	/^    def add_filename(self, fname):$/;"	kind:member	line:67
@@ -640,7 +670,6 @@ arr	../FreshOrient2017/colorTest.py	/^    arr = []$/;"	kind:variable	line:33
 arr	../FreshOrient2017/stationaryBot.py	/^arr = []$/;"	kind:variable	line:28
 author	../nxt-python/setup.py	/^    author='Marcus Wanner',$/;"	kind:variable	line:15
 author_email	../nxt-python/setup.py	/^    author_email='marcus@wanners.net',$/;"	kind:variable	line:16
-b	../FTC2017-18/AutoBlockMove.py	/^b = nxt.bluesock.BlueSock('00:16:53:10:22:3D').connect() #5060$/;"	kind:variable	line:12
 b	../FTC2017-18/AutoJewelSense.py	/^b = nxt.bluesock.BlueSock('00:16:53:10:22:3D').connect() #5060$/;"	kind:variable	line:12
 b	../FTC2017-18/AutoJewelSense.py	/^b = nxt.bluesock.BlueSock('00:16:53:10:22:3D').connect() #5060$/;"	kind:variable	line:27
 b	../FTC2017-18/BlockManipulate.py	/^b = nxt.bluesock.BlueSock('00:16:53:16:12:02').connect() #5060-S$/;"	kind:variable	line:11
@@ -655,6 +684,7 @@ b	../FreshOrient2017/motorsTest.py	/^b = nxt.bluesock.BlueSock('00:16:53:16:12:0
 b	../FreshOrient2017/speedTest.py	/^b = nxt.bluesock.BlueSock('00:16:53:16:12:02').connect() #5060-S$/;"	kind:variable	line:11
 b	../FreshOrient2017/stationaryBot.py	/^b = nxt.bluesock.BlueSock('00:16:53:16:12:02').connect() #5060-S$/;"	kind:variable	line:11
 b	../FreshOrient2017/testSounds.py	/^b = nxt.bluesock.BlueSock('00:16:53:16:12:02').connect() #5060-S$/;"	kind:variable	line:11
+b	../TestFTC2017/NxtCtl/GamePad.py	/^    b = False #BTN_EAST$/;"	kind:variable	line:144
 b	../examples/cnc.py	/^b = nxt.find_one_brick()$/;"	kind:variable	line:10
 b	../examples/latency.py	/^b = nxt.locator.find_one_brick()$/;"	kind:variable	line:7
 b	../examples/mary.py	/^b = nxt.locator.find_one_brick()$/;"	kind:variable	line:15
@@ -695,10 +725,12 @@ b	../opmodes/testMotorGamepad.py	/^b = nxt.bluesock.BlueSock('00:16:53:10:22:3D'
 b	../opmodes/testSound.py	/^b = nxt.bluesock.BlueSock('00:16:53:10:22:3D').connect() #replace the string with the one you got earlier$/;"	kind:variable	line:5
 back	../FTC2017-18/NxtCtl/GamePad.py	/^    back = False #BTN_SELECT$/;"	kind:variable	line:140
 back	../FreshOrient2017/NxtCtl/GamePad.py	/^    back = False #BTN_SELECT$/;"	kind:variable	line:140
+back	../TestFTC2017/NxtCtl/GamePad.py	/^    back = False #BTN_SELECT$/;"	kind:variable	line:140
 back	../nxt-python/nxt/GamePad.py	/^    back = False #BTN_SELECT$/;"	kind:variable	line:140
 ball	../graphics/main.py	/^    ball = ObjectProperty(None)$/;"	kind:variable	line:31
 batToString	../FTC2017-18/NxtCtl/SoundBrick.py	/^        def batToString(batch):$/;"	kind:function	line:53
 batToString	../FreshOrient2017/NxtCtl/SoundBrick.py	/^        def batToString(batch):$/;"	kind:function	line:53
+batToString	../TestFTC2017/NxtCtl/SoundBrick.py	/^        def batToString(batch):$/;"	kind:function	line:53
 blockGrabL	../FTC2017-18/BlockManipulate.py	/^blockGrabL = hardwareMap.Servo( b, nxt.PORT_4, 1)$/;"	kind:variable	line:25
 blockGrabL	../FTC2017-18/RelicManipulate.py	/^blockGrabL = hardwareMap.Servo( b, nxt.PORT_4, 1)$/;"	kind:variable	line:25
 blockGrabR	../FTC2017-18/BlockManipulate.py	/^blockGrabR = hardwareMap.Servo( b, nxt.PORT_4, 2)$/;"	kind:variable	line:26
@@ -721,6 +753,7 @@ build	../graphics/main.py	/^    def build(self):$/;"	kind:member	line:66
 buildx	../graphics/diag.py	/^    def buildx(self):$/;"	kind:member	line:26
 button	../FTC2017-18/NxtCtl/GamePad.py	/^    def button(self,x):$/;"	kind:member	line:167
 button	../FreshOrient2017/NxtCtl/GamePad.py	/^    def button(self,x):$/;"	kind:member	line:167
+button	../TestFTC2017/NxtCtl/GamePad.py	/^    def button(self,x):$/;"	kind:member	line:167
 button	../graphics/GamePad.py	/^    def button(self,x):$/;"	kind:member	line:169
 button	../nxt-python/nxt/GamePad.py	/^    def button(self,x):$/;"	kind:member	line:167
 button	../opmodes/NxtCtl/GamePad.py	/^    def button(self,x):$/;"	kind:member	line:166
@@ -736,6 +769,7 @@ check_status	../nxt-python/nxt/telegram.py	/^    def check_status(self):$/;"	kin
 clarifybinary	../nxt-python/nxt/sensor/digital.py	/^    def clarifybinary(self, instr, label):$/;"	kind:member	line:29
 clip	../FTC2017-18/NxtCtl/Range.py	/^def clip(VAL,MIN,MAX):$/;"	kind:function	line:2
 clip	../FreshOrient2017/NxtCtl/Range.py	/^def clip(VAL,MIN,MAX):$/;"	kind:function	line:2
+clip	../TestFTC2017/NxtCtl/Range.py	/^def clip(VAL,MIN,MAX):$/;"	kind:function	line:2
 clip	../graphics/Range.py	/^def clip(input,min,max):$/;"	kind:function	line:1
 clip	../nxt-python/nxt/Range.py	/^def clip(input,min,max):$/;"	kind:function	line:1
 clip	../opmodes/NxtCtl/Range.py	/^def clip(input,min,max):$/;"	kind:function	line:1
@@ -771,6 +805,7 @@ commands	../FreshOrient2017/archive/webCode.py	/^class commands:$/;"	kind:class	
 common.py	../nxt-python/nxt/sensor/common.py	1;"	kind:file	line:1
 configurationMap.py	../FTC2017-18/NxtCtl/incomplete/configurationMap.py	1;"	kind:file	line:1
 configurationMap.py	../FreshOrient2017/NxtCtl/incomplete/configurationMap.py	1;"	kind:file	line:1
+configurationMap.py	../TestFTC2017/NxtCtl/incomplete/configurationMap.py	1;"	kind:file	line:1
 configurationMap.py	../opmodes/NxtCtl/incomplete/configurationMap.py	1;"	kind:file	line:1
 connect	../nxt-python/nxt/bluesock.py	/^    def connect(self):$/;"	kind:member	line:36
 connect	../nxt-python/nxt/fantomsock.py	/^    def connect(self, addrport=None):$/;"	kind:member	line:39
@@ -780,6 +815,7 @@ connect	../nxt-python/nxt/lightblueglue.py	/^    def connect(self, addrport):$/;
 connect	../nxt-python/nxt/usbsock.py	/^    def connect(self):$/;"	kind:member	line:37
 csvToSong	../FTC2017-18/NxtCtl/SoundBrick.py	/^def csvToSong(filename):$/;"	kind:function	line:18
 csvToSong	../FreshOrient2017/NxtCtl/SoundBrick.py	/^def csvToSong(filename):$/;"	kind:function	line:18
+csvToSong	../TestFTC2017/NxtCtl/SoundBrick.py	/^def csvToSong(filename):$/;"	kind:function	line:18
 csvToSong	../opmodes/NxtCtl/SoundBrick.py	/^def csvToSong(filename):$/;"	kind:function	line:18
 debug	../nxt-python/nxt/motor.py	/^    debug = 0$/;"	kind:variable	line:137
 delete	../nxt-python/nxt/system.py	/^def delete(opcode, fname):$/;"	kind:function	line:82
@@ -800,15 +836,19 @@ direct.py	../nxt-python/nxt/direct.py	1;"	kind:file	line:1
 discover_devices	../nxt-python/nxt/lightblueglue.py	/^def discover_devices(lookup_names=False):  # parameter is ignored$/;"	kind:function	line:21
 dpad_down	../FTC2017-18/NxtCtl/GamePad.py	/^    dpad_down = False  #ABS_HAT0Y, 1$/;"	kind:variable	line:149
 dpad_down	../FreshOrient2017/NxtCtl/GamePad.py	/^    dpad_down = False  #ABS_HAT0Y, 1$/;"	kind:variable	line:149
+dpad_down	../TestFTC2017/NxtCtl/GamePad.py	/^    dpad_down = False  #ABS_HAT0Y, 1$/;"	kind:variable	line:149
 dpad_down	../nxt-python/nxt/GamePad.py	/^    dpad_down = False  #ABS_HAT0Y, 1$/;"	kind:variable	line:149
 dpad_left	../FTC2017-18/NxtCtl/GamePad.py	/^    dpad_left = False  #ABS_HAT0X,-1$/;"	kind:variable	line:150
 dpad_left	../FreshOrient2017/NxtCtl/GamePad.py	/^    dpad_left = False  #ABS_HAT0X,-1$/;"	kind:variable	line:150
+dpad_left	../TestFTC2017/NxtCtl/GamePad.py	/^    dpad_left = False  #ABS_HAT0X,-1$/;"	kind:variable	line:150
 dpad_left	../nxt-python/nxt/GamePad.py	/^    dpad_left = False  #ABS_HAT0X,-1$/;"	kind:variable	line:150
 dpad_right	../FTC2017-18/NxtCtl/GamePad.py	/^    dpad_right = False #ABS_HAT0X, 1$/;"	kind:variable	line:151
 dpad_right	../FreshOrient2017/NxtCtl/GamePad.py	/^    dpad_right = False #ABS_HAT0X, 1$/;"	kind:variable	line:151
+dpad_right	../TestFTC2017/NxtCtl/GamePad.py	/^    dpad_right = False #ABS_HAT0X, 1$/;"	kind:variable	line:151
 dpad_right	../nxt-python/nxt/GamePad.py	/^    dpad_right = False #ABS_HAT0X, 1$/;"	kind:variable	line:151
 dpad_up	../FTC2017-18/NxtCtl/GamePad.py	/^    dpad_up = False    #ABS_HAT0Y,-1$/;"	kind:variable	line:148
 dpad_up	../FreshOrient2017/NxtCtl/GamePad.py	/^    dpad_up = False    #ABS_HAT0Y,-1$/;"	kind:variable	line:148
+dpad_up	../TestFTC2017/NxtCtl/GamePad.py	/^    dpad_up = False    #ABS_HAT0Y,-1$/;"	kind:variable	line:148
 dpad_up	../nxt-python/nxt/GamePad.py	/^    dpad_up = False    #ABS_HAT0Y,-1$/;"	kind:variable	line:148
 echolocate	../examples/alpharex.py	/^    def echolocate(self):$/;"	kind:member	line:50
 echolocate	../nxt-python/examples/alpharex.py	/^    def echolocate(self):$/;"	kind:member	line:50
@@ -828,25 +868,29 @@ find_next	../nxt-python/nxt/system.py	/^def find_next(opcode, handle):$/;"	kind:
 find_one_brick	../nxt-python/nxt/locator.py	/^def find_one_brick(host=None, name=None, silent=False, strict=None, debug=False, method=None, confpath=None):$/;"	kind:function	line:83
 gamepad1	../FTC2017-18/NxtCtl/GamePad.py	/^gamepad1 = ol_Gamepad(0)$/;"	kind:variable	line:249
 gamepad1	../FreshOrient2017/NxtCtl/GamePad.py	/^gamepad1 = ol_Gamepad(0)$/;"	kind:variable	line:249
+gamepad1	../TestFTC2017/NxtCtl/GamePad.py	/^gamepad1 = ol_Gamepad(0)$/;"	kind:variable	line:249
 gamepad1	../graphics/GamePad.py	/^gamepad1 = ol_Gamepad(0)$/;"	kind:variable	line:225
 gamepad1	../nxt-python/nxt/GamePad.py	/^gamepad1 = ol_Gamepad(0)$/;"	kind:variable	line:249
 gamepad1	../opmodes/NxtCtl/GamePad.py	/^gamepad1 = ol_Gamepad(0)$/;"	kind:variable	line:246
 gamepad2	../FTC2017-18/NxtCtl/GamePad.py	/^gamepad2 = ol_Gamepad(1)$/;"	kind:variable	line:250
 gamepad2	../FreshOrient2017/NxtCtl/GamePad.py	/^gamepad2 = ol_Gamepad(1)$/;"	kind:variable	line:250
+gamepad2	../TestFTC2017/NxtCtl/GamePad.py	/^gamepad2 = ol_Gamepad(1)$/;"	kind:variable	line:250
 gamepad2	../graphics/GamePad.py	/^gamepad2 = ol_Gamepad(1)$/;"	kind:variable	line:226
 gamepad2	../nxt-python/nxt/GamePad.py	/^gamepad2 = ol_Gamepad(1)$/;"	kind:variable	line:250
 gamepad2	../opmodes/NxtCtl/GamePad.py	/^gamepad2 = ol_Gamepad(1)$/;"	kind:variable	line:247
 gamepad3	../FTC2017-18/NxtCtl/GamePad.py	/^gamepad3 = ol_Gamepad(2)$/;"	kind:variable	line:251
 gamepad3	../FreshOrient2017/NxtCtl/GamePad.py	/^gamepad3 = ol_Gamepad(2)$/;"	kind:variable	line:251
+gamepad3	../TestFTC2017/NxtCtl/GamePad.py	/^gamepad3 = ol_Gamepad(2)$/;"	kind:variable	line:251
 gamepad3	../graphics/GamePad.py	/^gamepad3 = ol_Gamepad(2)$/;"	kind:variable	line:230
 gamepad3	../nxt-python/nxt/GamePad.py	/^gamepad3 = ol_Gamepad(2)$/;"	kind:variable	line:251
 gamepad3	../opmodes/NxtCtl/GamePad.py	/^gamepad3 = ol_Gamepad(2)$/;"	kind:variable	line:248
 gamepad4	../FTC2017-18/NxtCtl/GamePad.py	/^gamepad4 = ol_Gamepad(3)$/;"	kind:variable	line:252
 gamepad4	../FreshOrient2017/NxtCtl/GamePad.py	/^gamepad4 = ol_Gamepad(3)$/;"	kind:variable	line:252
+gamepad4	../TestFTC2017/NxtCtl/GamePad.py	/^gamepad4 = ol_Gamepad(3)$/;"	kind:variable	line:252
 gamepad4	../graphics/GamePad.py	/^gamepad4 = ol_Gamepad(3)$/;"	kind:variable	line:231
 gamepad4	../nxt-python/nxt/GamePad.py	/^gamepad4 = ol_Gamepad(3)$/;"	kind:variable	line:252
 gamepad4	../opmodes/NxtCtl/GamePad.py	/^gamepad4 = ol_Gamepad(3)$/;"	kind:variable	line:249
-gamepadA	../FTC2017-18/AutoBlockMove.py	/^gamepadA = gamepad1$/;"	kind:variable	line:13
+gamepadA	../FTC2017-18/AutoBlockMove.py	/^gamepadA = gamepad1$/;"	kind:variable	line:14
 gamepadA	../FTC2017-18/AutoJewelSense.py	/^gamepadA = gamepad1$/;"	kind:variable	line:13
 gamepadA	../FTC2017-18/AutoJewelSense.py	/^gamepadA = gamepad1$/;"	kind:variable	line:28
 gamepadA	../FTC2017-18/BlockManipulate.py	/^gamepadA = gamepad1$/;"	kind:variable	line:13
@@ -854,7 +898,7 @@ gamepadA	../FTC2017-18/RelicManipulate.py	/^gamepadA = gamepad1$/;"	kind:variabl
 gamepadA	../FreshOrient2017/minionBot.py	/^gamepadA = gamepad1$/;"	kind:variable	line:13
 gamepadA	../FreshOrient2017/speedTest.py	/^gamepadA = gamepad1$/;"	kind:variable	line:21
 gamepadA	../FreshOrient2017/stationaryBot.py	/^gamepadA = gamepad3$/;"	kind:variable	line:13
-gamepadB	../FTC2017-18/AutoBlockMove.py	/^gamepadB = gamepad2/;"	kind:variable	line:14
+gamepadB	../FTC2017-18/AutoBlockMove.py	/^gamepadB = gamepad2$/;"	kind:variable	line:15
 gamepadB	../FTC2017-18/AutoJewelSense.py	/^gamepadB = gamepad2$/;"	kind:variable	line:14
 gamepadB	../FTC2017-18/AutoJewelSense.py	/^gamepadB = gamepad2$/;"	kind:variable	line:29
 gamepadB	../FTC2017-18/BlockManipulate.py	/^gamepadB = gamepad2$/;"	kind:variable	line:14
@@ -864,13 +908,16 @@ gamepadB	../FreshOrient2017/speedTest.py	/^gamepadB = gamepad2$/;"	kind:variable
 gamepadB	../FreshOrient2017/stationaryBot.py	/^gamepadB = gamepad4$/;"	kind:variable	line:14
 gamepads	../FTC2017-18/NxtCtl/GamePad.py	/^    gamepads = []$/;"	kind:variable	line:134
 gamepads	../FreshOrient2017/NxtCtl/GamePad.py	/^    gamepads = []$/;"	kind:variable	line:134
+gamepads	../TestFTC2017/NxtCtl/GamePad.py	/^    gamepads = []$/;"	kind:variable	line:134
 gamepads	../nxt-python/nxt/GamePad.py	/^    gamepads = []$/;"	kind:variable	line:134
 generic.py	../nxt-python/nxt/sensor/generic.py	1;"	kind:file	line:1
 getFreqFunc	../FTC2017-18/NxtCtl/SoundBrick.py	/^def getFreqFunc(x):$/;"	kind:function	line:5
 getFreqFunc	../FreshOrient2017/NxtCtl/SoundBrick.py	/^def getFreqFunc(x):$/;"	kind:function	line:5
+getFreqFunc	../TestFTC2017/NxtCtl/SoundBrick.py	/^def getFreqFunc(x):$/;"	kind:function	line:5
 getFreqFunc	../opmodes/NxtCtl/SoundBrick.py	/^def getFreqFunc(x):$/;"	kind:function	line:5
 getPower	../FTC2017-18/NxtCtl/hardwareMap.py	/^    def getPower(self,power):$/;"	kind:member	line:20
 getPower	../FreshOrient2017/NxtCtl/hardwareMap.py	/^    def getPower(self,power):$/;"	kind:member	line:20
+getPower	../TestFTC2017/NxtCtl/hardwareMap.py	/^    def getPower(self,power):$/;"	kind:member	line:20
 get_ac_values	../nxt-python/nxt/sensor/hitechnic.py	/^    def get_ac_values(self):$/;"	kind:member	line:219
 get_accel	../nxt-python/nxt/sensor/mindsensors.py	/^    def get_accel(self, axis):$/;"	kind:member	line:321
 get_acceleration	../nxt-python/nxt/sensor/hitechnic.py	/^    def get_acceleration(self):$/;"	kind:member	line:103
@@ -884,6 +931,7 @@ get_bat_level	../nxt-python/nxt/sensor/mindsensors.py	/^    def get_bat_level(se
 get_bat_level	../nxt-python/nxt/sensor/mindsensors.py	/^    def get_bat_level(self):$/;"	kind:member	line:650
 get_battery_level	../nxt-python/nxt/direct.py	/^def get_battery_level(opcode):$/;"	kind:function	line:123
 get_battery_voltage	../FTC2017-18/NxtCtl/hardwareMap.py	/^    def get_battery_voltage(self):$/;"	kind:member	line:30
+get_battery_voltage	../TestFTC2017/NxtCtl/hardwareMap.py	/^    def get_battery_voltage(self):$/;"	kind:member	line:30
 get_battery_voltage	../nxt-python/nxt/sensor/hitechnic.py	/^    def get_battery_voltage(self):$/;"	kind:function	line:604
 get_buttons	../nxt-python/nxt/sensor/mindsensors.py	/^    def get_buttons(self, setnum):$/;"	kind:member	line:802
 get_color	../nxt-python/nxt/sensor/generic.py	/^    def get_color(self):$/;"	kind:member	line:150
@@ -899,8 +947,10 @@ get_distance	../nxt-python/nxt/sensor/generic.py	/^    def get_distance(self):$/
 get_distance	../nxt-python/nxt/sensor/mindsensors.py	/^    def get_distance(self):$/;"	kind:member	line:134
 get_dsp_mode	../nxt-python/nxt/sensor/hitechnic.py	/^    def get_dsp_mode(self):$/;"	kind:function	line:226
 get_enc_current	../FTC2017-18/NxtCtl/hardwareMap.py	/^    def get_enc_current(self):$/;"	kind:member	line:28
+get_enc_current	../TestFTC2017/NxtCtl/hardwareMap.py	/^    def get_enc_current(self):$/;"	kind:member	line:28
 get_enc_current	../nxt-python/nxt/sensor/hitechnic.py	/^    def get_enc_current(self, mot):$/;"	kind:member	line:555
 get_enc_target	../FTC2017-18/NxtCtl/hardwareMap.py	/^    def get_enc_target(self):$/;"	kind:member	line:26
+get_enc_target	../TestFTC2017/NxtCtl/hardwareMap.py	/^    def get_enc_target(self):$/;"	kind:member	line:26
 get_enc_target	../nxt-python/nxt/sensor/hitechnic.py	/^    def get_enc_target(self, mot):$/;"	kind:member	line:550
 get_encoder_pos	../nxt-python/nxt/sensor/mindsensors.py	/^    def get_encoder_pos(self, motor_number):$/;"	kind:member	line:686
 get_firmware_version	../nxt-python/nxt/system.py	/^def get_firmware_version(opcode):$/;"	kind:function	line:104
@@ -933,6 +983,7 @@ get_pid	../nxt-python/nxt/sensor/hitechnic.py	/^    def get_pid(self, mot):$/;"	
 get_position	../nxt-python/nxt/sensor/mindsensors.py	/^    def get_position(self, number):$/;"	kind:member	line:579
 get_power	../FTC2017-18/NxtCtl/hardwareMap.py	/^    def get_power(self):$/;"	kind:member	line:16
 get_power	../FreshOrient2017/NxtCtl/hardwareMap.py	/^    def get_power(self):$/;"	kind:member	line:16
+get_power	../TestFTC2017/NxtCtl/hardwareMap.py	/^    def get_power(self):$/;"	kind:member	line:16
 get_power	../nxt-python/nxt/sensor/hitechnic.py	/^    def get_power(self, mot):$/;"	kind:function	line:577
 get_processed_value	../nxt-python/nxt/sensor/hitechnic.py	/^    def get_processed_value(self):$/;"	kind:member	line:273
 get_pwm	../nxt-python/nxt/sensor/hitechnic.py	/^    def get_pwm(self):$/;"	kind:function	line:504
@@ -975,6 +1026,7 @@ get_speed	../nxt-python/nxt/sensor/mindsensors.py	/^    def get_speed(self, numb
 get_speeds	../nxt-python/nxt/sensor/hitechnic.py	/^    def get_speeds(self):$/;"	kind:member	line:147
 get_state	../FTC2017-18/NxtCtl/GamePad.py	/^    def get_state(self):$/;"	kind:member	line:240
 get_state	../FreshOrient2017/NxtCtl/GamePad.py	/^    def get_state(self):$/;"	kind:member	line:240
+get_state	../TestFTC2017/NxtCtl/GamePad.py	/^    def get_state(self):$/;"	kind:member	line:240
 get_state	../nxt-python/nxt/GamePad.py	/^    def get_state(self):$/;"	kind:member	line:240
 get_state	../opmodes/NxtCtl/GamePad.py	/^    def get_state(self):$/;"	kind:member	line:237
 get_status	../nxt-python/nxt/sensor/hitechnic.py	/^    def get_status(self):$/;"	kind:member	line:487
@@ -993,12 +1045,15 @@ get_voltage	../nxt-python/nxt/sensor/mindsensors.py	/^    def get_voltage(self):
 get_year	../nxt-python/nxt/sensor/mindsensors.py	/^    def get_year(self):$/;"	kind:member	line:205
 guide	../FTC2017-18/NxtCtl/GamePad.py	/^    guide = False #BTN_MODE$/;"	kind:variable	line:141
 guide	../FreshOrient2017/NxtCtl/GamePad.py	/^    guide = False #BTN_MODE$/;"	kind:variable	line:141
+guide	../TestFTC2017/NxtCtl/GamePad.py	/^    guide = False #BTN_MODE$/;"	kind:variable	line:141
 guide	../nxt-python/nxt/GamePad.py	/^    guide = False #BTN_MODE$/;"	kind:variable	line:141
 hardwareMap	../opmodes/demo.py	/^hardwareMap = HardwareMap(map_1)$/;"	kind:variable	line:5
 hardwareMap.py	../FTC2017-18/NxtCtl/hardwareMap.py	1;"	kind:file	line:1
 hardwareMap.py	../FTC2017-18/NxtCtl/incomplete/hardwareMap.py	1;"	kind:file	line:1
 hardwareMap.py	../FreshOrient2017/NxtCtl/hardwareMap.py	1;"	kind:file	line:1
 hardwareMap.py	../FreshOrient2017/NxtCtl/incomplete/hardwareMap.py	1;"	kind:file	line:1
+hardwareMap.py	../TestFTC2017/NxtCtl/hardwareMap.py	1;"	kind:file	line:1
+hardwareMap.py	../TestFTC2017/NxtCtl/incomplete/hardwareMap.py	1;"	kind:file	line:1
 hardwareMap.py	../opmodes/NxtCtl/incomplete/hardwareMap.py	1;"	kind:file	line:1
 hear	../examples/alpharex.py	/^    def hear(self):$/;"	kind:member	line:60
 hear	../nxt-python/examples/alpharex.py	/^    def hear(self):$/;"	kind:member	line:60
@@ -1011,10 +1066,12 @@ index	../FreshOrient2017/archive/webCode.py	/^class index:$/;"	kind:class	line:3
 index_info	../FreshOrient2017/archive/webCode.py	/^index_info = (s.getsockname()[0])$/;"	kind:variable	line:22
 init	../FTC2017-18/NxtCtl/OpMode.py	/^def init():$/;"	kind:function	line:8
 init	../FreshOrient2017/NxtCtl/OpMode.py	/^def init():$/;"	kind:function	line:8
+init	../TestFTC2017/NxtCtl/OpMode.py	/^def init():$/;"	kind:function	line:8
 init	../opmodes/NxtCtl/OpMode.py	/^def init():$/;"	kind:function	line:8
 init	../opmodes/demo.py	/^def init():$/;"	kind:function	line:7
 init_loop	../FTC2017-18/NxtCtl/OpMode.py	/^def init_loop():$/;"	kind:function	line:10
 init_loop	../FreshOrient2017/NxtCtl/OpMode.py	/^def init_loop():$/;"	kind:function	line:10
+init_loop	../TestFTC2017/NxtCtl/OpMode.py	/^def init_loop():$/;"	kind:function	line:10
 init_loop	../opmodes/NxtCtl/OpMode.py	/^def init_loop():$/;"	kind:function	line:10
 init_loop	../opmodes/demo.py	/^def init_loop():$/;"	kind:function	line:9
 instructions	../examples/cnc.py	/^instructions = ($/;"	kind:variable	line:25
@@ -1023,6 +1080,7 @@ interval	../nxt-python/nxt/motcont.py	/^def interval(delay, lastrun):$/;"	kind:f
 ipsock.py	../nxt-python/nxt/ipsock.py	1;"	kind:file	line:1
 isNear	../FTC2017-18/NxtCtl/Range.py	/^def isNear(var,target,threshold):$/;"	kind:function	line:13
 isNear	../FreshOrient2017/NxtCtl/Range.py	/^def isNear(var,target,threshold):$/;"	kind:function	line:13
+isNear	../TestFTC2017/NxtCtl/Range.py	/^def isNear(var,target,threshold):$/;"	kind:function	line:13
 is_greater	../nxt-python/nxt/motor.py	/^    def is_greater(self, other, direction):$/;"	kind:member	line:113
 is_greater	../nxt-python/nxt/motor.py	/^    def is_greater(self, target, direction):$/;"	kind:member	line:91
 is_in_range	../nxt-python/nxt/sensor/hitechnic.py	/^    def is_in_range(self,minval,maxval):$/;"	kind:member	line:54
@@ -1038,18 +1096,23 @@ ldesc	../nxt-python/setup.py	/^    ldesc = ""$/;"	kind:variable	line:10
 ldesc	../nxt-python/setup.py	/^    ldesc = readme.read(20000)$/;"	kind:variable	line:7
 left_bumper	../FTC2017-18/NxtCtl/GamePad.py	/^    left_bumper = False    #BTN_TL$/;"	kind:variable	line:153
 left_bumper	../FreshOrient2017/NxtCtl/GamePad.py	/^    left_bumper = False    #BTN_TL$/;"	kind:variable	line:153
+left_bumper	../TestFTC2017/NxtCtl/GamePad.py	/^    left_bumper = False    #BTN_TL$/;"	kind:variable	line:153
 left_bumper	../nxt-python/nxt/GamePad.py	/^    left_bumper = False    #BTN_TL$/;"	kind:variable	line:153
 left_stick_button	../FTC2017-18/NxtCtl/GamePad.py	/^    left_stick_button = False   #BTN_THUMBL$/;"	kind:variable	line:159
 left_stick_button	../FreshOrient2017/NxtCtl/GamePad.py	/^    left_stick_button = False   #BTN_THUMBL$/;"	kind:variable	line:159
+left_stick_button	../TestFTC2017/NxtCtl/GamePad.py	/^    left_stick_button = False   #BTN_THUMBL$/;"	kind:variable	line:159
 left_stick_button	../nxt-python/nxt/GamePad.py	/^    left_stick_button = False   #BTN_THUMBL$/;"	kind:variable	line:159
 left_stick_x	../FTC2017-18/NxtCtl/GamePad.py	/^    left_stick_x = 0 #ABS_X$/;"	kind:variable	line:162
 left_stick_x	../FreshOrient2017/NxtCtl/GamePad.py	/^    left_stick_x = 0 #ABS_X$/;"	kind:variable	line:162
+left_stick_x	../TestFTC2017/NxtCtl/GamePad.py	/^    left_stick_x = 0 #ABS_X$/;"	kind:variable	line:162
 left_stick_x	../nxt-python/nxt/GamePad.py	/^    left_stick_x = 0 #ABS_X$/;"	kind:variable	line:162
 left_stick_y	../FTC2017-18/NxtCtl/GamePad.py	/^    left_stick_y = 0 #ABS_Y$/;"	kind:variable	line:161
 left_stick_y	../FreshOrient2017/NxtCtl/GamePad.py	/^    left_stick_y = 0 #ABS_Y$/;"	kind:variable	line:161
+left_stick_y	../TestFTC2017/NxtCtl/GamePad.py	/^    left_stick_y = 0 #ABS_Y$/;"	kind:variable	line:161
 left_stick_y	../nxt-python/nxt/GamePad.py	/^    left_stick_y = 0 #ABS_Y$/;"	kind:variable	line:161
 left_trigger	../FTC2017-18/NxtCtl/GamePad.py	/^    left_trigger  = 0 #ABS_Z$/;"	kind:variable	line:155
 left_trigger	../FreshOrient2017/NxtCtl/GamePad.py	/^    left_trigger  = 0 #ABS_Z$/;"	kind:variable	line:155
+left_trigger	../TestFTC2017/NxtCtl/GamePad.py	/^    left_trigger  = 0 #ABS_Z$/;"	kind:variable	line:155
 left_trigger	../nxt-python/nxt/GamePad.py	/^    left_trigger  = 0 #ABS_Z$/;"	kind:variable	line:155
 length	../examples/cnc.py	/^length = 5$/;"	kind:variable	line:34
 length	../nxt-python/examples/cnc.py	/^length = 5$/;"	kind:variable	line:34
@@ -1061,6 +1124,7 @@ locator.py	../nxt-python/nxt/locator.py	1;"	kind:file	line:1
 long_description	../nxt-python/setup.py	/^    long_description=ldesc$/;"	kind:variable	line:22
 loop	../FTC2017-18/NxtCtl/OpMode.py	/^def loop():$/;"	kind:function	line:12
 loop	../FreshOrient2017/NxtCtl/OpMode.py	/^def loop():$/;"	kind:function	line:12
+loop	../TestFTC2017/NxtCtl/OpMode.py	/^def loop():$/;"	kind:function	line:12
 loop	../opmodes/NxtCtl/OpMode.py	/^def loop():$/;"	kind:function	line:12
 loop	../opmodes/demo.py	/^def loop():$/;"	kind:function	line:11
 ls_get_status	../nxt-python/nxt/direct.py	/^def ls_get_status(opcode, port):$/;"	kind:function	line:142
@@ -1078,11 +1142,13 @@ main.py	../graphics/main.py	1;"	kind:file	line:1
 make_config	../nxt-python/nxt/locator.py	/^def make_config(confpath=None):$/;"	kind:function	line:155
 map_1	../FTC2017-18/NxtCtl/incomplete/configurationMap.py	/^map_1 = {$/;"	kind:variable	line:3
 map_1	../FreshOrient2017/NxtCtl/incomplete/configurationMap.py	/^map_1 = {$/;"	kind:variable	line:3
+map_1	../TestFTC2017/NxtCtl/incomplete/configurationMap.py	/^map_1 = {$/;"	kind:variable	line:3
 map_1	../opmodes/NxtCtl/incomplete/configurationMap.py	/^map_1 = {$/;"	kind:variable	line:3
 mary.py	../examples/mary.py	1;"	kind:file	line:1
 mary.py	../nxt-python/examples/mary.py	1;"	kind:file	line:1
 message	../FTC2017-18/NxtCtl/GamePad.py	/^    message = 0 #Gamepad Indicator message 3 state switch: int 0-2$/;"	kind:variable	line:130
 message	../FreshOrient2017/NxtCtl/GamePad.py	/^    message = 0 #Gamepad Indicator message 3 state switch: int 0-2$/;"	kind:variable	line:130
+message	../TestFTC2017/NxtCtl/GamePad.py	/^    message = 0 #Gamepad Indicator message 3 state switch: int 0-2$/;"	kind:variable	line:130
 message	../nxt-python/nxt/GamePad.py	/^    message = 0 #Gamepad Indicator message 3 state switch: int 0-2$/;"	kind:variable	line:130
 message_read	../nxt-python/nxt/direct.py	/^def message_read(opcode, remote_inbox, local_inbox, remove):$/;"	kind:function	line:182
 message_test.py	../examples/message_test.py	1;"	kind:file	line:1
@@ -1100,20 +1166,24 @@ motorCenter	../FreshOrient2017/stationaryBot.py	/^motorCenter = nxt.Motor(b, nxt
 motorCenter	../opmodes/pyBotRollie.py	/^motorCenter = nxt.Motor(b, nxt.PORT_C)$/;"	kind:variable	line:10
 motorCenter	../opmodes/pyBotRollie1.py	/^motorCenter = nxt.Motor(b, nxt.PORT_C)$/;"	kind:variable	line:10
 motorLeft	../FTC2017-18/AutoJewelSense.py	/^motorLeft = hardwareMap.DcMotor( b, nxt.PORT_1, 2)$/;"	kind:variable	line:33
+motorLeft	../FTC2017-18/BlockManipulate.py	/^motorLeft = hardwareMap.DcMotor( b, nxt.PORT_1, 2)$/;"	kind:variable	line:18
 motorLeft	../FreshOrient2017/minionBot.py	/^motorLeft = hardwareMap.DcMotor( b, nxt.PORT_1, 2)$/;"	kind:variable	line:18
 motorLeft	../FreshOrient2017/motorsTest.py	/^motorLeft = nxt.Motor(b, nxt.PORT_A)$/;"	kind:variable	line:14
 motorLeft	../FreshOrient2017/stationaryBot.py	/^motorLeft = nxt.Motor(b, nxt.PORT_A)$/;"	kind:variable	line:16
 motorLeft	../opmodes/pyBotRollie.py	/^motorLeft = nxt.Motor(b, nxt.PORT_A)$/;"	kind:variable	line:8
 motorLeft	../opmodes/pyBotRollie1.py	/^motorLeft = nxt.Motor(b, nxt.PORT_A)$/;"	kind:variable	line:8
 motorLeft1	../FTC2017-18/AutoJewelSense.py	/^motorLeft1 = hardwareMap.DcMotor( b, nxt.PORT_2, 2)$/;"	kind:variable	line:36
+motorLeft1	../FTC2017-18/BlockManipulate.py	/^motorLeft1 = hardwareMap.DcMotor( b, nxt.PORT_2, 2)$/;"	kind:variable	line:21
 motorLeft1	../FreshOrient2017/minionBot.py	/^motorLeft1 = hardwareMap.DcMotor( b, nxt.PORT_2, 2)$/;"	kind:variable	line:21
 motorRight	../FTC2017-18/AutoJewelSense.py	/^motorRight = hardwareMap.DcMotor( b, nxt.PORT_1, 1)$/;"	kind:variable	line:32
+motorRight	../FTC2017-18/BlockManipulate.py	/^motorRight = hardwareMap.DcMotor( b, nxt.PORT_1, 1)$/;"	kind:variable	line:17
 motorRight	../FreshOrient2017/minionBot.py	/^motorRight = hardwareMap.DcMotor( b, nxt.PORT_1, 1)$/;"	kind:variable	line:17
 motorRight	../FreshOrient2017/motorsTest.py	/^motorRight = nxt.Motor(b, nxt.PORT_C)$/;"	kind:variable	line:16
 motorRight	../FreshOrient2017/stationaryBot.py	/^motorRight = nxt.Motor(b, nxt.PORT_C)$/;"	kind:variable	line:18
 motorRight	../opmodes/pyBotRollie.py	/^motorRight = nxt.Motor(b, nxt.PORT_B)$/;"	kind:variable	line:9
 motorRight	../opmodes/pyBotRollie1.py	/^motorRight = nxt.Motor(b, nxt.PORT_B)$/;"	kind:variable	line:9
 motorRight1	../FTC2017-18/AutoJewelSense.py	/^motorRight1 = hardwareMap.DcMotor( b, nxt.PORT_2, 1)$/;"	kind:variable	line:35
+motorRight1	../FTC2017-18/BlockManipulate.py	/^motorRight1 = hardwareMap.DcMotor( b, nxt.PORT_2, 1)$/;"	kind:variable	line:20
 motorRight1	../FreshOrient2017/minionBot.py	/^motorRight1 = hardwareMap.DcMotor( b, nxt.PORT_2, 1)$/;"	kind:variable	line:20
 motorRotate	../FreshOrient2017/stationaryBot.py	/^motorRotate = hardwareMap.DcMotor(b, PORT_4, 2)$/;"	kind:variable	line:20
 motors	../examples/cnc.py	/^motors = [mx, my]$/;"	kind:variable	line:13
@@ -1133,24 +1203,30 @@ myform	../FreshOrient2017/archive/webCode.py	/^myform = form.Form($/;"	kind:vari
 name	../nxt-python/setup.py	/^    name='nxt-python',$/;"	kind:variable	line:13
 note_arr	../FTC2017-18/NxtCtl/SoundBrick.py	/^note_arr = note_str.split(" ")$/;"	kind:variable	line:3
 note_arr	../FreshOrient2017/NxtCtl/SoundBrick.py	/^note_arr = note_str.split(" ")$/;"	kind:variable	line:3
+note_arr	../TestFTC2017/NxtCtl/SoundBrick.py	/^note_arr = note_str.split(" ")$/;"	kind:variable	line:3
 note_arr	../opmodes/NxtCtl/SoundBrick.py	/^note_arr = note_str.split(" ")$/;"	kind:variable	line:3
 note_freq	../FTC2017-18/NxtCtl/SoundBrick.py	/^note_freq = {}$/;"	kind:variable	line:4
 note_freq	../FreshOrient2017/NxtCtl/SoundBrick.py	/^note_freq = {}$/;"	kind:variable	line:4
+note_freq	../TestFTC2017/NxtCtl/SoundBrick.py	/^note_freq = {}$/;"	kind:variable	line:4
 note_freq	../opmodes/NxtCtl/SoundBrick.py	/^note_freq = {}$/;"	kind:variable	line:4
 note_str	../FTC2017-18/NxtCtl/SoundBrick.py	/^note_str = "la la# lb lc lc# ld ld# le lf lf# lg lg# a a# b c c# d d# e f f# g g# ha ha# hb hc hc# hd hd# he hf hf# hg hg# 2a 2a# 2b 2c 2c# 2d 2d# 2e 2f 2f# 2g 2g# 3a 3a# 3b 3c 3c# 3d 3d# 3e 3f 3f# 3g 3g# 3a"$/;"	kind:variable	line:2
 note_str	../FreshOrient2017/NxtCtl/SoundBrick.py	/^note_str = "la la# lb lc lc# ld ld# le lf lf# lg lg# a a# b c c# d d# e f f# g g# ha ha# hb hc hc# hd hd# he hf hf# hg hg# 2a 2a# 2b 2c 2c# 2d 2d# 2e 2f 2f# 2g 2g# 3a 3a# 3b 3c 3c# 3d 3d# 3e 3f 3f# 3g 3g# 3a"$/;"	kind:variable	line:2
+note_str	../TestFTC2017/NxtCtl/SoundBrick.py	/^note_str = "la la# lb lc lc# ld ld# le lf lf# lg lg# a a# b c c# d d# e f f# g g# ha ha# hb hc hc# hd hd# he hf hf# hg hg# 2a 2a# 2b 2c 2c# 2d 2d# 2e 2f 2f# 2g 2g# 3a 3a# 3b 3c 3c# 3d 3d# 3e 3f 3f# 3g 3g# 3a"$/;"	kind:variable	line:2
 note_str	../opmodes/NxtCtl/SoundBrick.py	/^note_str = "la la# lb lc lc# ld ld# le lf lf# lg lg# a a# b c c# d d# e f f# g g# ha ha# hb hc hc# hd hd# he hf hf# hg hg# 2a 2a# 2b 2c 2c# 2d 2d# 2e 2f 2f# 2g 2g# 3a"$/;"	kind:variable	line:2
 numG	../FTC2017-18/NxtCtl/GamePad.py	/^    numG = len(inputs.DeviceManager().gamepads)$/;"	kind:variable	line:137
 numG	../FreshOrient2017/NxtCtl/GamePad.py	/^    numG = len(inputs.DeviceManager().gamepads)$/;"	kind:variable	line:137
+numG	../TestFTC2017/NxtCtl/GamePad.py	/^    numG = len(inputs.DeviceManager().gamepads)$/;"	kind:variable	line:137
 numG	../nxt-python/nxt/GamePad.py	/^    numG = len(inputs.DeviceManager().gamepads)$/;"	kind:variable	line:137
 nxtMotAsServo.py	../FreshOrient2017/archive/nxtMotAsServo.py	1;"	kind:file	line:1
 ol_Gamepad	../FTC2017-18/NxtCtl/GamePad.py	/^class ol_Gamepad(object):$/;"	kind:class	line:129
 ol_Gamepad	../FreshOrient2017/NxtCtl/GamePad.py	/^class ol_Gamepad(object):$/;"	kind:class	line:129
+ol_Gamepad	../TestFTC2017/NxtCtl/GamePad.py	/^class ol_Gamepad(object):$/;"	kind:class	line:129
 ol_Gamepad	../graphics/GamePad.py	/^class ol_Gamepad(object):$/;"	kind:class	line:132
 ol_Gamepad	../nxt-python/nxt/GamePad.py	/^class ol_Gamepad(object):$/;"	kind:class	line:129
 ol_Gamepad	../opmodes/NxtCtl/GamePad.py	/^class ol_Gamepad(object):$/;"	kind:class	line:129
 old	../FTC2017-18/NxtCtl/GamePad.py	/^    old = ul_Gamepad()$/;"	kind:variable	line:136
 old	../FreshOrient2017/NxtCtl/GamePad.py	/^    old = ul_Gamepad()$/;"	kind:variable	line:136
+old	../TestFTC2017/NxtCtl/GamePad.py	/^    old = ul_Gamepad()$/;"	kind:variable	line:136
 old	../nxt-python/nxt/GamePad.py	/^    old = ul_Gamepad()$/;"	kind:variable	line:136
 on_touch_move	../graphics/main.py	/^    def on_touch_move(self, touch):$/;"	kind:member	line:58
 open_append_data	../nxt-python/nxt/system.py	/^def open_append_data(opcode, fname):$/;"	kind:function	line:135
@@ -1162,12 +1238,14 @@ open_write_data	../nxt-python/nxt/system.py	/^def open_write_data(opcode, fname,
 open_write_linear	../nxt-python/nxt/system.py	/^def open_write_linear(opcode, fname, n_bytes):$/;"	kind:function	line:117
 other_buttons	../FTC2017-18/NxtCtl/GamePad.py	/^    def other_buttons(self,x):$/;"	kind:member	line:170
 other_buttons	../FreshOrient2017/NxtCtl/GamePad.py	/^    def other_buttons(self,x):$/;"	kind:member	line:170
+other_buttons	../TestFTC2017/NxtCtl/GamePad.py	/^    def other_buttons(self,x):$/;"	kind:member	line:170
 other_buttons	../graphics/GamePad.py	/^    def other_buttons(self,x):$/;"	kind:member	line:172
 other_buttons	../nxt-python/nxt/GamePad.py	/^    def other_buttons(self,x):$/;"	kind:member	line:170
 other_buttons	../opmodes/NxtCtl/GamePad.py	/^    def other_buttons(self,x):$/;"	kind:member	line:169
 packages	../nxt-python/setup.py	/^    packages=['nxt', 'nxt.sensor'],$/;"	kind:variable	line:20
 pad	../FTC2017-18/NxtCtl/GamePad.py	/^    pad = ul_Gamepad()$/;"	kind:variable	line:135
 pad	../FreshOrient2017/NxtCtl/GamePad.py	/^    pad = ul_Gamepad()$/;"	kind:variable	line:135
+pad	../TestFTC2017/NxtCtl/GamePad.py	/^    pad = ul_Gamepad()$/;"	kind:variable	line:135
 pad	../nxt-python/nxt/GamePad.py	/^    pad = ul_Gamepad()$/;"	kind:variable	line:135
 padDisplay	../opmodes/NxtCtl/GamePad.py	/^padDisplay = TextDisplay("Gamepads")$/;"	kind:variable	line:243
 parse_command_line_arguments	../nxt-python/nxt/utils.py	/^def parse_command_line_arguments(arguments):$/;"	kind:function	line:16
@@ -1181,26 +1259,34 @@ parse_u8	../nxt-python/nxt/telegram.py	/^    def parse_u8(self):$/;"	kind:member
 pid	../opmodes/test.py	/^        pid = m1.get_pid(1)$/;"	kind:variable	line:39
 playFile	../FTC2017-18/NxtCtl/SoundBrick.py	/^    def playFile(self,filename,tempo):$/;"	kind:member	line:147
 playFile	../FreshOrient2017/NxtCtl/SoundBrick.py	/^    def playFile(self,filename,tempo):$/;"	kind:member	line:147
+playFile	../TestFTC2017/NxtCtl/SoundBrick.py	/^    def playFile(self,filename,tempo):$/;"	kind:member	line:147
 playNote	../FTC2017-18/NxtCtl/SoundBrick.py	/^    def playNote(self,b,name,duration=1,variance=0):$/;"	kind:member	line:99
 playNote	../FTC2017-18/NxtCtl/SoundBrick.py	/^    def playNote(self,noteName,duration,variance):$/;"	kind:member	line:126
 playNote	../FreshOrient2017/NxtCtl/SoundBrick.py	/^    def playNote(self,b,name,duration=1,variance=0):$/;"	kind:member	line:99
 playNote	../FreshOrient2017/NxtCtl/SoundBrick.py	/^    def playNote(self,noteName,duration,variance):$/;"	kind:member	line:126
+playNote	../TestFTC2017/NxtCtl/SoundBrick.py	/^    def playNote(self,b,name,duration=1,variance=0):$/;"	kind:member	line:99
+playNote	../TestFTC2017/NxtCtl/SoundBrick.py	/^    def playNote(self,noteName,duration,variance):$/;"	kind:member	line:126
 playNote	../opmodes/NxtCtl/SoundBrick.py	/^    def playNote(self,b,name,duration=1,variance=0):$/;"	kind:member	line:90
 playNote	../opmodes/NxtCtl/SoundBrick.py	/^    def playNote(self,noteName,duration,variance):$/;"	kind:member	line:117
 playSound	../FTC2017-18/NxtCtl/SoundBrick.py	/^    def playSound(self,b,batch,tempo):$/;"	kind:member	line:78
 playSound	../FTC2017-18/NxtCtl/SoundBrick.py	/^    def playSound(self,batch,tempo):$/;"	kind:member	line:119
 playSound	../FreshOrient2017/NxtCtl/SoundBrick.py	/^    def playSound(self,b,batch,tempo):$/;"	kind:member	line:78
 playSound	../FreshOrient2017/NxtCtl/SoundBrick.py	/^    def playSound(self,batch,tempo):$/;"	kind:member	line:119
+playSound	../TestFTC2017/NxtCtl/SoundBrick.py	/^    def playSound(self,b,batch,tempo):$/;"	kind:member	line:78
+playSound	../TestFTC2017/NxtCtl/SoundBrick.py	/^    def playSound(self,batch,tempo):$/;"	kind:member	line:119
 playSound	../opmodes/NxtCtl/SoundBrick.py	/^    def playSound(self,b,batch,tempo):$/;"	kind:member	line:70
 playSound	../opmodes/NxtCtl/SoundBrick.py	/^    def playSound(self,batch,tempo):$/;"	kind:member	line:110
 playSoundSample	../FTC2017-18/NxtCtl/SoundBrick.py	/^    def playSoundSample(self,b,batchNum,tempo):$/;"	kind:member	line:52
 playSoundSample	../FTC2017-18/NxtCtl/SoundBrick.py	/^    def playSoundSample(self,batchNum,tempo):$/;"	kind:member	line:112
 playSoundSample	../FreshOrient2017/NxtCtl/SoundBrick.py	/^    def playSoundSample(self,b,batchNum,tempo):$/;"	kind:member	line:52
 playSoundSample	../FreshOrient2017/NxtCtl/SoundBrick.py	/^    def playSoundSample(self,batchNum,tempo):$/;"	kind:member	line:112
+playSoundSample	../TestFTC2017/NxtCtl/SoundBrick.py	/^    def playSoundSample(self,b,batchNum,tempo):$/;"	kind:member	line:52
+playSoundSample	../TestFTC2017/NxtCtl/SoundBrick.py	/^    def playSoundSample(self,batchNum,tempo):$/;"	kind:member	line:112
 playSoundSample	../opmodes/NxtCtl/SoundBrick.py	/^    def playSoundSample(self,b,batchNum,tempo):$/;"	kind:member	line:51
 playSoundSample	../opmodes/NxtCtl/SoundBrick.py	/^    def playSoundSample(self,batchNum,tempo):$/;"	kind:member	line:103
 play_notes	../FTC2017-18/NxtCtl/SoundBrick.py	/^play_notes = []$/;"	kind:variable	line:14
 play_notes	../FreshOrient2017/NxtCtl/SoundBrick.py	/^play_notes = []$/;"	kind:variable	line:14
+play_notes	../TestFTC2017/NxtCtl/SoundBrick.py	/^play_notes = []$/;"	kind:variable	line:14
 play_notes	../opmodes/NxtCtl/SoundBrick.py	/^play_notes = []$/;"	kind:variable	line:14
 play_sound_file	../nxt-python/nxt/direct.py	/^def play_sound_file(opcode, loop, fname):$/;"	kind:function	line:33
 play_tone	../nxt-python/nxt/direct.py	/^def play_tone(opcode, frequency, duration):$/;"	kind:function	line:39
@@ -1222,10 +1308,10 @@ pyBotRollie.py	../opmodes/pyBotRollie.py	1;"	kind:file	line:1
 pyBotRollie1.py	../opmodes/pyBotRollie1.py	1;"	kind:file	line:1
 pyBotRopeBot.py	../opmodes/pyBotRopeBot.py	1;"	kind:file	line:1
 pyGame.py	../graphics/pyGame.py	1;"	kind:file	line:1
-r_grabber	../FTC2017-18/BlockManipulate.py	/^def r_grabber():$/;"	kind:function	line:33
+r_grabber	../FTC2017-18/BlockManipulate.py	/^def r_grabber():$/;"	kind:function	line:34
 r_minionLights	../FreshOrient2017/minionBot.py	/^def r_minionLights(): #Multicontroller right_trigger for both user and admin$/;"	kind:function	line:78
 r_motorPower	../FTC2017-18/AutoJewelSense.py	/^def r_motorPower(): # Multicontroller admin-dpad&left_stick user-left_stick$/;"	kind:function	line:38
-r_motorPower	../FTC2017-18/BlockManipulate.py	/^def r_motorPower(): # Multicontroller admin-dpad&left_stick user-left_stick$/;"	kind:function	line:51
+r_motorPower	../FTC2017-18/BlockManipulate.py	/^def r_motorPower(): # Multicontroller admin-dpad&left_stick user-left_stick$/;"	kind:function	line:53
 r_motorPower	../FTC2017-18/RelicManipulate.py	/^def r_motorPower(): # Multicontroller admin-dpad&left_stick user-left_stick$/;"	kind:function	line:38
 r_motorPower	../FreshOrient2017/minionBot.py	/^def r_motorPower(): # Multicontroller admin-dpad&left_stick user-left_stick$/;"	kind:function	line:36
 r_motorPower	../FreshOrient2017/stationaryBot.py	/^def r_motorPower(): # Multicontroller just admin now$/;"	kind:function	line:42
@@ -1250,6 +1336,7 @@ request_first_module	../nxt-python/nxt/system.py	/^def request_first_module(opco
 request_next_module	../nxt-python/nxt/system.py	/^def request_next_module(opcode, handle):$/;"	kind:function	line:156
 reset	../FTC2017-18/NxtCtl/GameGraphics.py	/^    def reset(self):$/;"	kind:member	line:11
 reset	../FreshOrient2017/NxtCtl/GameGraphics.py	/^    def reset(self):$/;"	kind:member	line:11
+reset	../TestFTC2017/NxtCtl/GameGraphics.py	/^    def reset(self):$/;"	kind:member	line:11
 reset	../opmodes/NxtCtl/GameGraphics.py	/^    def reset(self):$/;"	kind:member	line:10
 reset_input_scaled_value	../nxt-python/nxt/direct.py	/^def reset_input_scaled_value(opcode, port):$/;"	kind:function	line:104
 reset_input_scaled_value	../nxt-python/nxt/sensor/analog.py	/^    def reset_input_scaled_value(self):$/;"	kind:member	line:39
@@ -1259,24 +1346,31 @@ reset_position	../nxt-python/nxt/motor.py	/^    def reset_position(self, relativ
 reset_tacho	../nxt-python/nxt/motcont.py	/^    def reset_tacho(self, port):$/;"	kind:function	line:94
 right_bumper	../FTC2017-18/NxtCtl/GamePad.py	/^    right_bumper = False   #BTN_TR$/;"	kind:variable	line:154
 right_bumper	../FreshOrient2017/NxtCtl/GamePad.py	/^    right_bumper = False   #BTN_TR$/;"	kind:variable	line:154
+right_bumper	../TestFTC2017/NxtCtl/GamePad.py	/^    right_bumper = False   #BTN_TR$/;"	kind:variable	line:154
 right_bumper	../nxt-python/nxt/GamePad.py	/^    right_bumper = False   #BTN_TR$/;"	kind:variable	line:154
 right_stick_button	../FTC2017-18/NxtCtl/GamePad.py	/^    right_stick_button = False  #BTN_THUMBR$/;"	kind:variable	line:160
 right_stick_button	../FreshOrient2017/NxtCtl/GamePad.py	/^    right_stick_button = False  #BTN_THUMBR$/;"	kind:variable	line:160
+right_stick_button	../TestFTC2017/NxtCtl/GamePad.py	/^    right_stick_button = False  #BTN_THUMBR$/;"	kind:variable	line:160
 right_stick_button	../nxt-python/nxt/GamePad.py	/^    right_stick_button = False  #BTN_THUMBR$/;"	kind:variable	line:160
 right_stick_x	../FTC2017-18/NxtCtl/GamePad.py	/^    right_stick_x = 0 #ABS_RX$/;"	kind:variable	line:164
 right_stick_x	../FreshOrient2017/NxtCtl/GamePad.py	/^    right_stick_x = 0 #ABS_RX$/;"	kind:variable	line:164
+right_stick_x	../TestFTC2017/NxtCtl/GamePad.py	/^    right_stick_x = 0 #ABS_RX$/;"	kind:variable	line:164
 right_stick_x	../nxt-python/nxt/GamePad.py	/^    right_stick_x = 0 #ABS_RX$/;"	kind:variable	line:164
 right_stick_y	../FTC2017-18/NxtCtl/GamePad.py	/^    right_stick_y = 0 #ABS_RY$/;"	kind:variable	line:163
 right_stick_y	../FreshOrient2017/NxtCtl/GamePad.py	/^    right_stick_y = 0 #ABS_RY$/;"	kind:variable	line:163
+right_stick_y	../TestFTC2017/NxtCtl/GamePad.py	/^    right_stick_y = 0 #ABS_RY$/;"	kind:variable	line:163
 right_stick_y	../nxt-python/nxt/GamePad.py	/^    right_stick_y = 0 #ABS_RY$/;"	kind:variable	line:163
 right_trigger	../FTC2017-18/NxtCtl/GamePad.py	/^    right_trigger = 0 #ABS_RZ$/;"	kind:variable	line:156
 right_trigger	../FreshOrient2017/NxtCtl/GamePad.py	/^    right_trigger = 0 #ABS_RZ$/;"	kind:variable	line:156
+right_trigger	../TestFTC2017/NxtCtl/GamePad.py	/^    right_trigger = 0 #ABS_RZ$/;"	kind:variable	line:156
 right_trigger	../nxt-python/nxt/GamePad.py	/^    right_trigger = 0 #ABS_RZ$/;"	kind:variable	line:156
 robot_ctl1.py	../opmodes/robot_ctl1.py	1;"	kind:file	line:1
 run	../FTC2017-18/NxtCtl/OpMode.py	/^def run():$/;"	kind:function	line:15
 run	../FTC2017-18/NxtCtl/SoundBrick.py	/^    def run(self):$/;"	kind:member	line:37
 run	../FreshOrient2017/NxtCtl/OpMode.py	/^def run():$/;"	kind:function	line:15
 run	../FreshOrient2017/NxtCtl/SoundBrick.py	/^    def run(self):$/;"	kind:member	line:37
+run	../TestFTC2017/NxtCtl/OpMode.py	/^def run():$/;"	kind:function	line:15
+run	../TestFTC2017/NxtCtl/SoundBrick.py	/^    def run(self):$/;"	kind:member	line:37
 run	../nxt-python/nxt/motor.py	/^    def run(self, power=100):$/;"	kind:member	line:395
 run	../nxt-python/nxt/motor.py	/^    def run(self, power=100, regulated=False):$/;"	kind:member	line:280
 run	../opmodes/NxtCtl/OpMode.py	/^def run():$/;"	kind:function	line:15
@@ -1308,9 +1402,11 @@ s	../nxt-python/examples/mindsensors/RTC.py	/^s = MSRTC(b, PORT_1)           #wh
 s	../nxt-python/examples/mindsensors/Servo.py	/^s = MSServo(b, PORT_1)          #which sensor, brick and port to talk to$/;"	kind:variable	line:7
 safeCreation	../FTC2017-18/NxtCtl/SoundBrick.py	/^    def safeCreation(self):$/;"	kind:member	line:134
 safeCreation	../FreshOrient2017/NxtCtl/SoundBrick.py	/^    def safeCreation(self):$/;"	kind:member	line:134
+safeCreation	../TestFTC2017/NxtCtl/SoundBrick.py	/^    def safeCreation(self):$/;"	kind:member	line:134
 safeCreation	../opmodes/NxtCtl/SoundBrick.py	/^    def safeCreation(self):$/;"	kind:member	line:125
 safeStart	../FTC2017-18/NxtCtl/SoundBrick.py	/^    def safeStart(self):$/;"	kind:member	line:49
 safeStart	../FreshOrient2017/NxtCtl/SoundBrick.py	/^    def safeStart(self):$/;"	kind:member	line:49
+safeStart	../TestFTC2017/NxtCtl/SoundBrick.py	/^    def safeStart(self):$/;"	kind:member	line:49
 safeStart	../opmodes/NxtCtl/SoundBrick.py	/^    def safeStart(self):$/;"	kind:member	line:48
 say	../examples/alpharex.py	/^    def say(self, line, times=1):$/;"	kind:member	line:65
 say	../nxt-python/examples/alpharex.py	/^    def say(self, line, times=1):$/;"	kind:member	line:65
@@ -1345,8 +1441,10 @@ servoX	../FreshOrient2017/minionBot.py	/^servoX = hardwareMap.Servo( b, nxt.PORT
 servoY	../FreshOrient2017/minionBot.py	/^servoY = hardwareMap.Servo( b, nxt.PORT_4, 1)$/;"	kind:variable	line:26
 setPosition	../FTC2017-18/NxtCtl/hardwareMap.py	/^    def setPosition(self, pos):$/;"	kind:member	line:49
 setPosition	../FreshOrient2017/NxtCtl/hardwareMap.py	/^    def setPosition(self, pos):$/;"	kind:member	line:33
+setPosition	../TestFTC2017/NxtCtl/hardwareMap.py	/^    def setPosition(self, pos):$/;"	kind:member	line:49
 setPower	../FTC2017-18/NxtCtl/hardwareMap.py	/^    def setPower(self,power):$/;"	kind:member	line:12
 setPower	../FreshOrient2017/NxtCtl/hardwareMap.py	/^    def setPower(self,power):$/;"	kind:member	line:12
+setPower	../TestFTC2017/NxtCtl/hardwareMap.py	/^    def setPower(self,power):$/;"	kind:member	line:12
 set_adjusted	../nxt-python/nxt/sensor/generic.py	/^    def set_adjusted(self, active):$/;"	kind:member	line:61
 set_brick_name	../nxt-python/nxt/system.py	/^def set_brick_name(opcode, bname):$/;"	kind:function	line:202
 set_digital	../nxt-python/nxt/sensor/hitechnic.py	/^    def set_digital(self, pins):$/;"	kind:function	line:453
@@ -1354,6 +1452,7 @@ set_digital_modes	../nxt-python/nxt/sensor/hitechnic.py	/^    def set_digital_mo
 set_direction	../nxt-python/nxt/sensor/mindsensors.py	/^    def set_direction(self, number, value):$/;"	kind:member	line:376
 set_dsp_mode	../nxt-python/nxt/sensor/hitechnic.py	/^    def set_dsp_mode(self, mode):$/;"	kind:function	line:229
 set_enc_target	../FTC2017-18/NxtCtl/hardwareMap.py	/^    def set_enc_target(self, val):$/;"	kind:member	line:24
+set_enc_target	../TestFTC2017/NxtCtl/hardwareMap.py	/^    def set_enc_target(self, val):$/;"	kind:member	line:24
 set_enc_target	../nxt-python/nxt/sensor/hitechnic.py	/^    def set_enc_target(self, mot, val):$/;"	kind:member	line:545
 set_encoder_target	../nxt-python/nxt/sensor/mindsensors.py	/^    def set_encoder_target(self, motor_number, value):$/;"	kind:member	line:653
 set_gear_ratio	../nxt-python/nxt/sensor/hitechnic.py	/^    def set_gear_ratio(self, mot, ratio):$/;"	kind:function	line:582
@@ -1364,6 +1463,7 @@ set_interval	../nxt-python/nxt/sensor/generic.py	/^    def set_interval(self, in
 set_light_color	../nxt-python/nxt/sensor/generic.py	/^    def set_light_color(self, color):$/;"	kind:member	line:138
 set_long_range	../nxt-python/nxt/sensor/mindsensors.py	/^    def set_long_range(self, val):$/;"	kind:member	line:48
 set_mode	../FTC2017-18/NxtCtl/hardwareMap.py	/^    def set_mode(self,mode):$/;"	kind:member	line:32
+set_mode	../TestFTC2017/NxtCtl/hardwareMap.py	/^    def set_mode(self,mode):$/;"	kind:member	line:32
 set_mode	../nxt-python/nxt/sensor/hitechnic.py	/^    def set_mode(self, mode):$/;"	kind:function	line:76
 set_mode	../nxt-python/nxt/sensor/hitechnic.py	/^    def set_mode(self, mode):$/;"	kind:member	line:359
 set_mode	../nxt-python/nxt/sensor/hitechnic.py	/^    def set_mode(self, mot, mode):$/;"	kind:member	line:560
@@ -1378,10 +1478,12 @@ set_pid	../nxt-python/nxt/sensor/mindsensors.py	/^    def set_pid(self, pid, val
 set_pid_divisor	../nxt-python/nxt/sensor/mindsensors.py	/^    def set_pid_divisor(self, pid, value):$/;"	kind:member	line:476
 set_pos	../FTC2017-18/NxtCtl/hardwareMap.py	/^    def set_pos(self, pos):$/;"	kind:member	line:45
 set_pos	../FreshOrient2017/NxtCtl/hardwareMap.py	/^    def set_pos(self, pos):$/;"	kind:member	line:29
+set_pos	../TestFTC2017/NxtCtl/hardwareMap.py	/^    def set_pos(self, pos):$/;"	kind:member	line:45
 set_pos	../nxt-python/nxt/sensor/hitechnic.py	/^    def set_pos(self, num, pos):$/;"	kind:function	line:498
 set_position	../nxt-python/nxt/sensor/mindsensors.py	/^    def set_position(self, number, value):$/;"	kind:member	line:575
 set_power	../FTC2017-18/NxtCtl/hardwareMap.py	/^    def set_power(self,power):$/;"	kind:member	line:8
 set_power	../FreshOrient2017/NxtCtl/hardwareMap.py	/^    def set_power(self,power):$/;"	kind:member	line:8
+set_power	../TestFTC2017/NxtCtl/hardwareMap.py	/^    def set_power(self,power):$/;"	kind:member	line:8
 set_power	../nxt-python/nxt/sensor/hitechnic.py	/^    def set_power(self, mot, power):$/;"	kind:function	line:572
 set_pwm	../nxt-python/nxt/sensor/hitechnic.py	/^    def set_pwm(self, pwm):$/;"	kind:function	line:510
 set_quick	../nxt-python/nxt/sensor/mindsensors.py	/^    def set_quick(self, number, value):$/;"	kind:member	line:589
@@ -1399,6 +1501,7 @@ set_zero	../nxt-python/nxt/sensor/hitechnic.py	/^    def set_zero(self, value):$
 setup.py	../nxt-python/setup.py	1;"	kind:file	line:1
 show_status	../FTC2017-18/NxtCtl/GamePad.py	/^    def show_status(self):$/;"	kind:member	line:242
 show_status	../FreshOrient2017/NxtCtl/GamePad.py	/^    def show_status(self):$/;"	kind:member	line:242
+show_status	../TestFTC2017/NxtCtl/GamePad.py	/^    def show_status(self):$/;"	kind:member	line:242
 show_status	../nxt-python/nxt/GamePad.py	/^    def show_status(self):$/;"	kind:member	line:242
 show_status	../opmodes/NxtCtl/GamePad.py	/^    def show_status(self):$/;"	kind:member	line:239
 sound	../FreshOrient2017/colorTest.py	/^sound = nxt.sensor.generic.Sound(b,PORT_3)$/;"	kind:variable	line:16
@@ -1420,6 +1523,7 @@ spin_around	../examples/spin.py	/^def spin_around(b):$/;"	kind:function	line:6
 spin_around	../nxt-python/examples/spin.py	/^def spin_around(b):$/;"	kind:function	line:6
 start	../FTC2017-18/NxtCtl/GamePad.py	/^    start = False #BTN_START$/;"	kind:variable	line:139
 start	../FreshOrient2017/NxtCtl/GamePad.py	/^    start = False #BTN_START$/;"	kind:variable	line:139
+start	../TestFTC2017/NxtCtl/GamePad.py	/^    start = False #BTN_START$/;"	kind:variable	line:139
 start	../examples/latency.py	/^start = time.time()$/;"	kind:variable	line:11
 start	../examples/latency.py	/^start = time.time()$/;"	kind:variable	line:19
 start	../nxt-python/examples/latency.py	/^start = time.time()$/;"	kind:variable	line:11
@@ -1431,14 +1535,17 @@ stationaryBot.py	../FreshOrient2017/archive/stationaryBot.py	1;"	kind:file	line:
 stationaryBot.py	../FreshOrient2017/stationaryBot.py	1;"	kind:file	line:1
 status	../FTC2017-18/NxtCtl/GamePad.py	/^    def status(self):$/;"	kind:member	line:174
 status	../FreshOrient2017/NxtCtl/GamePad.py	/^    def status(self):$/;"	kind:member	line:174
+status	../TestFTC2017/NxtCtl/GamePad.py	/^    def status(self):$/;"	kind:member	line:174
 status	../graphics/GamePad.py	/^    def status(self):$/;"	kind:member	line:176
 status	../nxt-python/nxt/GamePad.py	/^    def status(self):$/;"	kind:member	line:174
 status	../opmodes/NxtCtl/GamePad.py	/^    def status(self):$/;"	kind:member	line:173
 status0	../FTC2017-18/NxtCtl/GamePad.py	/^    status0 = False$/;"	kind:variable	line:132
 status0	../FreshOrient2017/NxtCtl/GamePad.py	/^    status0 = False$/;"	kind:variable	line:132
+status0	../TestFTC2017/NxtCtl/GamePad.py	/^    status0 = False$/;"	kind:variable	line:132
 status0	../nxt-python/nxt/GamePad.py	/^    status0 = False$/;"	kind:variable	line:132
 status1	../FTC2017-18/NxtCtl/GamePad.py	/^    status1 = False$/;"	kind:variable	line:133
 status1	../FreshOrient2017/NxtCtl/GamePad.py	/^    status1 = False$/;"	kind:variable	line:133
+status1	../TestFTC2017/NxtCtl/GamePad.py	/^    status1 = False$/;"	kind:variable	line:133
 status1	../nxt-python/nxt/GamePad.py	/^    status1 = False$/;"	kind:variable	line:133
 stop	../examples/latency.py	/^stop = time.time()$/;"	kind:variable	line:14
 stop	../examples/latency.py	/^stop = time.time()$/;"	kind:variable	line:22
@@ -1449,6 +1556,7 @@ stop_program	../nxt-python/nxt/direct.py	/^def stop_program(opcode):$/;"	kind:fu
 stop_sound_playback	../nxt-python/nxt/direct.py	/^def stop_sound_playback(opcode):$/;"	kind:function	line:131
 success	../FTC2017-18/NxtCtl/SoundBrick.py	/^    def success(self):$/;"	kind:member	line:137
 success	../FreshOrient2017/NxtCtl/SoundBrick.py	/^    def success(self):$/;"	kind:member	line:137
+success	../TestFTC2017/NxtCtl/SoundBrick.py	/^    def success(self):$/;"	kind:member	line:137
 superTest.py	../opmodes/superTest.py	1;"	kind:file	line:1
 system.py	../nxt-python/nxt/system.py	1;"	kind:file	line:1
 t	../examples/mindsensors/RTC.py	/^':' + str(s.get_minutes()) $/;"	kind:variable	line:17
@@ -1460,6 +1568,8 @@ telemetry	../FTC2017-18/NxtCtl/GameGraphics.py	/^telemetry = TextDisplay("First 
 telemetry	../FTC2017-18/NxtCtl/OpMode.py	/^telemetry = TextDisplay("Robot Telemetry")$/;"	kind:variable	line:6
 telemetry	../FreshOrient2017/NxtCtl/GameGraphics.py	/^telemetry = TextDisplay("First Display")$/;"	kind:variable	line:55
 telemetry	../FreshOrient2017/NxtCtl/OpMode.py	/^telemetry = TextDisplay("Robot Telemetry")$/;"	kind:variable	line:6
+telemetry	../TestFTC2017/NxtCtl/GameGraphics.py	/^telemetry = TextDisplay("First Display")$/;"	kind:variable	line:55
+telemetry	../TestFTC2017/NxtCtl/OpMode.py	/^telemetry = TextDisplay("Robot Telemetry")$/;"	kind:variable	line:6
 telemetry	../opmodes/NxtCtl/OpMode.py	/^telemetry = TextDisplay("Robot Telemetry")$/;"	kind:variable	line:6
 tell	../nxt-python/nxt/brick.py	/^    def tell(self):$/;"	kind:member	line:162
 test.py	../opmodes/test.py	1;"	kind:file	line:1
@@ -1472,10 +1582,12 @@ test_sensors.py	../examples/test_sensors.py	1;"	kind:file	line:1
 test_sensors.py	../nxt-python/examples/test_sensors.py	1;"	kind:file	line:1
 toStr_bool	../FTC2017-18/NxtCtl/GamePad.py	/^    def toStr_bool(self):$/;"	kind:member	line:224
 toStr_bool	../FreshOrient2017/NxtCtl/GamePad.py	/^    def toStr_bool(self):$/;"	kind:member	line:224
+toStr_bool	../TestFTC2017/NxtCtl/GamePad.py	/^    def toStr_bool(self):$/;"	kind:member	line:224
 toStr_bool	../nxt-python/nxt/GamePad.py	/^    def toStr_bool(self):$/;"	kind:member	line:224
 toStr_bool	../opmodes/NxtCtl/GamePad.py	/^    def toStr_bool(self):$/;"	kind:member	line:221
 toStr_float	../FTC2017-18/NxtCtl/GamePad.py	/^    def toStr_float(self):$/;"	kind:member	line:232
 toStr_float	../FreshOrient2017/NxtCtl/GamePad.py	/^    def toStr_float(self):$/;"	kind:member	line:232
+toStr_float	../TestFTC2017/NxtCtl/GamePad.py	/^    def toStr_float(self):$/;"	kind:member	line:232
 toStr_float	../nxt-python/nxt/GamePad.py	/^    def toStr_float(self):$/;"	kind:member	line:232
 toStr_float	../opmodes/NxtCtl/GamePad.py	/^    def toStr_float(self):$/;"	kind:member	line:229
 to_list	../nxt-python/nxt/motor.py	/^    def to_list(self):$/;"	kind:member	line:52
@@ -1497,6 +1609,7 @@ type	../nxt-python/nxt/bluesock.py	/^    type = 'bluetooth'$/;"	kind:variable	li
 type	../nxt-python/nxt/usbsock.py	/^    type = 'usb'$/;"	kind:variable	line:27
 ul_Gamepad	../FTC2017-18/NxtCtl/GamePad.py	/^class ul_Gamepad(object):$/;"	kind:class	line:4
 ul_Gamepad	../FreshOrient2017/NxtCtl/GamePad.py	/^class ul_Gamepad(object):$/;"	kind:class	line:4
+ul_Gamepad	../TestFTC2017/NxtCtl/GamePad.py	/^class ul_Gamepad(object):$/;"	kind:class	line:4
 ul_Gamepad	../graphics/GamePad.py	/^class ul_Gamepad(object):$/;"	kind:class	line:7
 ul_Gamepad	../nxt-python/nxt/GamePad.py	/^class ul_Gamepad(object):$/;"	kind:class	line:4
 ul_Gamepad	../opmodes/NxtCtl/GamePad.py	/^class ul_Gamepad(object):$/;"	kind:class	line:4
@@ -1511,6 +1624,9 @@ update	../FTC2017-18/NxtCtl/GamePad.py	/^    def update(self):$/;"	kind:member	l
 update	../FreshOrient2017/NxtCtl/GameGraphics.py	/^    def update(self):$/;"	kind:member	line:19
 update	../FreshOrient2017/NxtCtl/GamePad.py	/^    def update(self):$/;"	kind:member	line:184
 update	../FreshOrient2017/NxtCtl/GamePad.py	/^    def update(self):$/;"	kind:member	line:38
+update	../TestFTC2017/NxtCtl/GameGraphics.py	/^    def update(self):$/;"	kind:member	line:19
+update	../TestFTC2017/NxtCtl/GamePad.py	/^    def update(self):$/;"	kind:member	line:184
+update	../TestFTC2017/NxtCtl/GamePad.py	/^    def update(self):$/;"	kind:member	line:38
 update	../graphics/GamePad.py	/^    def update(self):$/;"	kind:member	line:184
 update	../graphics/GamePad.py	/^    def update(self):$/;"	kind:member	line:41
 update	../graphics/diag.py	/^    def update(self, dt):$/;"	kind:member	line:15
@@ -1525,6 +1641,8 @@ updater	../FTC2017-18/NxtCtl/GameGraphics.py	/^    def updater(self):$/;"	kind:m
 updater	../FTC2017-18/NxtCtl/GamePad.py	/^    def updater(self):$/;"	kind:member	line:221
 updater	../FreshOrient2017/NxtCtl/GameGraphics.py	/^    def updater(self):$/;"	kind:member	line:17
 updater	../FreshOrient2017/NxtCtl/GamePad.py	/^    def updater(self):$/;"	kind:member	line:221
+updater	../TestFTC2017/NxtCtl/GameGraphics.py	/^    def updater(self):$/;"	kind:member	line:17
+updater	../TestFTC2017/NxtCtl/GamePad.py	/^    def updater(self):$/;"	kind:member	line:221
 updater	../graphics/GamePad.py	/^    def updater(self):$/;"	kind:member	line:221
 updater	../nxt-python/nxt/GamePad.py	/^    def updater(self):$/;"	kind:member	line:221
 updater	../opmodes/NxtCtl/GameGraphics.py	/^    def updater(self):$/;"	kind:member	line:16
@@ -1557,9 +1675,11 @@ write_value	../nxt-python/nxt/sensor/digital.py	/^    def write_value(self, name
 x	../FTC2017-18/NxtCtl/GamePad.py	/^    x = False #BTN_NORTH$/;"	kind:variable	line:145
 x	../FreshOrient2017/NxtCtl/GamePad.py	/^    x = False #BTN_NORTH$/;"	kind:variable	line:145
 x	../FreshOrient2017/colorTest.py	/^x = 0$/;"	kind:variable	line:19
+x	../TestFTC2017/NxtCtl/GamePad.py	/^    x = False #BTN_NORTH$/;"	kind:variable	line:145
 x	../nxt-python/nxt/GamePad.py	/^    x = False #BTN_NORTH$/;"	kind:variable	line:145
 y	../FTC2017-18/NxtCtl/GamePad.py	/^    y = False #BTN_WEST$/;"	kind:variable	line:146
 y	../FreshOrient2017/NxtCtl/GamePad.py	/^    y = False #BTN_WEST$/;"	kind:variable	line:146
 y	../FreshOrient2017/colorTest.py	/^    y = int(gamepad1.left_stick_y-1*-2.5)$/;"	kind:variable	line:31
 y	../FreshOrient2017/colorTest.py	/^y = 0$/;"	kind:variable	line:20
+y	../TestFTC2017/NxtCtl/GamePad.py	/^    y = False #BTN_WEST$/;"	kind:variable	line:146
 y	../nxt-python/nxt/GamePad.py	/^    y = False #BTN_WEST$/;"	kind:variable	line:146
