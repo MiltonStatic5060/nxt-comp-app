@@ -7,52 +7,62 @@
 ARG1	../NxtCtl/SoundBrick.py	/^    ARG1 = None$/;"	kind:variable	line:32
 ARG2	../NxtCtl/SoundBrick.py	/^    ARG2 = None$/;"	kind:variable	line:33
 ARG3	../NxtCtl/SoundBrick.py	/^    ARG3 = None$/;"	kind:variable	line:34
-AutoBlockMove.py	../AutoBlockMove.py	1;"	kind:file	line:1
-AutoJewelSense.py	../AutoJewelSense.py	1;"	kind:file	line:1
-BlockManipulate.py	../BlockManipulate.py	1;"	kind:file	line:1
+BlockManipulateNew.py	../BlockManipulateNew.py	1;"	kind:file	line:1
+CURRSTATE	../Lego1.py	/^    CURRSTATE = {}$/;"	kind:variable	line:21
+CURRSTATE	../Lego1.py	/^CURRSTATE = {"motorLeft_pow":[0],"motorRight_pow":[0]}$/;"	kind:variable	line:31
+CURRSTATE	../NxtCtl/React.py	/^    CURRSTATE = {}$/;"	kind:variable	line:2
 DEVICES	../NxtCtl/incomplete/hardwareMap.py	/^    DEVICES = []$/;"	kind:variable	line:4
 DcMotor	../NxtCtl/hardwareMap.py	/^class DcMotor(MotorCon):$/;"	kind:class	line:4
 FREQ_C	../NxtCtl/SoundBrick.py	/^FREQ_C = 440$/;"	kind:variable	line:13
 FREQ_E	../NxtCtl/SoundBrick.py	/^FREQ_E = 659$/;"	kind:variable	line:12
 FUNC_TYPE	../NxtCtl/SoundBrick.py	/^    FUNC_TYPE = 0$/;"	kind:variable	line:31
-GameGraphics.py	../NxtCtl/GameGraphics.py	1;"	kind:file	line:1
+GameGraphics.py	../NxtCtl/incomplete/GameGraphics.py	1;"	kind:file	line:1
 GamePad.py	../NxtCtl/GamePad.py	1;"	kind:file	line:1
 HardwareMap	../NxtCtl/incomplete/hardwareMap.py	/^class HardwareMap(object):$/;"	kind:class	line:3
-OpMode.py	../NxtCtl/OpMode.py	1;"	kind:file	line:1
+Lego1.py	../Lego1.py	1;"	kind:file	line:1
+Lego2.py	../Lego2.py	1;"	kind:file	line:1
+Lego3.py	../Lego3.py	1;"	kind:file	line:1
+OpMode.py	../NxtCtl/incomplete/OpMode.py	1;"	kind:file	line:1
+PREVSTATE	../Lego1.py	/^    PREVSTATE = {}$/;"	kind:variable	line:22
+PREVSTATE	../Lego1.py	/^PREVSTATE = CURRSTATE.copy()$/;"	kind:variable	line:32
+PREVSTATE	../NxtCtl/React.py	/^    PREVSTATE = CURRSTATE.copy()$/;"	kind:variable	line:3
 Player	../NxtCtl/SoundBrick.py	/^class Player(object):$/;"	kind:class	line:108
 PlayerObj	../NxtCtl/SoundBrick.py	/^class PlayerObj(threading.Thread):$/;"	kind:class	line:30
 Range.py	../NxtCtl/Range.py	1;"	kind:file	line:1
-RelicManipulate.py	../RelicManipulate.py	1;"	kind:file	line:1
+React.py	../NxtCtl/React.py	1;"	kind:file	line:1
+ReactCtl	../Lego1.py	/^class ReactCtl(object):$/;"	kind:class	line:19
+ReactCtl	../NxtCtl/React.py	/^class ReactCtl(object):$/;"	kind:class	line:1
 Servo	../NxtCtl/hardwareMap.py	/^class Servo(ServoCon):$/;"	kind:class	line:41
 SoundBrick.py	../NxtCtl/SoundBrick.py	1;"	kind:file	line:1
-TextDisplay	../NxtCtl/GameGraphics.py	/^class TextDisplay(object):$/;"	kind:class	line:6
-__init__	../NxtCtl/GameGraphics.py	/^    def __init__(self,name):$/;"	kind:member	line:7
+TextDisplay	../NxtCtl/incomplete/GameGraphics.py	/^class TextDisplay(object):$/;"	kind:class	line:6
+__init__	../Lego1.py	/^    def __init__(self):$/;"	kind:member	line:23
 __init__	../NxtCtl/GamePad.py	/^    def __init__(self, x=None):$/;"	kind:member	line:5
 __init__	../NxtCtl/GamePad.py	/^    def __init__(self,n):$/;"	kind:member	line:165
+__init__	../NxtCtl/React.py	/^    def __init__(self):$/;"	kind:member	line:5
 __init__	../NxtCtl/SoundBrick.py	/^    def __init__(self):$/;"	kind:member	line:35
 __init__	../NxtCtl/SoundBrick.py	/^    def __init__(self,brick):$/;"	kind:member	line:109
 __init__	../NxtCtl/hardwareMap.py	/^    def __init__(self, brick, port, motorport):$/;"	kind:member	line:5
 __init__	../NxtCtl/hardwareMap.py	/^    def __init__(self, brick, port, servoport):$/;"	kind:member	line:42
+__init__	../NxtCtl/incomplete/GameGraphics.py	/^    def __init__(self,name):$/;"	kind:member	line:7
 __init__	../NxtCtl/incomplete/hardwareMap.py	/^    def __init__(self,map):$/;"	kind:member	line:6
 __init__.py	../NxtCtl/__init__.py	1;"	kind:file	line:1
+__version__	../NxtCtl/__init__.py	/^__version__ = '3.1.0'$/;"	kind:variable	line:1
 a	../NxtCtl/GamePad.py	/^    a = False #BTN_SOUTH$/;"	kind:variable	line:143
-addData	../NxtCtl/GameGraphics.py	/^    def addData(self,input0,input1=""):$/;"	kind:member	line:13
-b	../AutoJewelSense.py	/^b = nxt.bluesock.BlueSock('00:16:53:10:22:3D').connect() #5060$/;"	kind:variable	line:12
-b	../AutoJewelSense.py	/^b = nxt.bluesock.BlueSock('00:16:53:10:22:3D').connect() #5060$/;"	kind:variable	line:27
-b	../BlockManipulate.py	/^b = nxt.bluesock.BlueSock('00:16:53:10:22:3D').connect() #5060$/;"	kind:variable	line:12
+addData	../NxtCtl/incomplete/GameGraphics.py	/^    def addData(self,input0,input1=""):$/;"	kind:member	line:13
+b	../BlockManipulateNew.py	/^b = nxt.bluesock.BlueSock('00:16:53:10:22:3D').connect() #5060$/;"	kind:variable	line:13
+b	../Lego1.py	/^b = nxt.bluesock.BlueSock('00:16:53:16:12:02').connect() #5060-S$/;"	kind:variable	line:11
+b	../Lego2.py	/^b = nxt.bluesock.BlueSock('00:16:53:16:12:02').connect() #5060-S$/;"	kind:variable	line:12
+b	../Lego3.py	/^b = nxt.bluesock.BlueSock('00:16:53:16:12:02').connect() #5060-S$/;"	kind:variable	line:12
 b	../NxtCtl/GamePad.py	/^    b = False #BTN_EAST$/;"	kind:variable	line:144
-b	../RelicManipulate.py	/^b = nxt.bluesock.BlueSock('00:16:53:10:22:3D').connect() #5060$/;"	kind:variable	line:12
 back	../NxtCtl/GamePad.py	/^    back = False #BTN_SELECT$/;"	kind:variable	line:140
 batToString	../NxtCtl/SoundBrick.py	/^        def batToString(batch):$/;"	kind:function	line:53
-blockGrabL	../BlockManipulate.py	/^blockGrabL = hardwareMap.Servo( b, nxt.PORT_4, 1)$/;"	kind:variable	line:25
-blockGrabL	../RelicManipulate.py	/^blockGrabL = hardwareMap.Servo( b, nxt.PORT_4, 1)$/;"	kind:variable	line:25
-blockGrabR	../BlockManipulate.py	/^blockGrabR = hardwareMap.Servo( b, nxt.PORT_4, 2)$/;"	kind:variable	line:26
-blockGrabR	../RelicManipulate.py	/^blockGrabR = hardwareMap.Servo( b, nxt.PORT_4, 2)$/;"	kind:variable	line:26
-blockLift	../BlockManipulate.py	/^blockLift = hardwareMap.DcMotor( b, nxt.PORT_3, 1)$/;"	kind:variable	line:27
-blockLift	../RelicManipulate.py	/^blockLift = hardwareMap.DcMotor( b, nxt.PORT_3, 1)$/;"	kind:variable	line:27
+blockGrabL	../BlockManipulateNew.py	/^blockGrabL = hardwareMap.Servo( b, nxt.PORT_4, 1)$/;"	kind:variable	line:26
+blockGrabR	../BlockManipulateNew.py	/^blockGrabR = hardwareMap.Servo( b, nxt.PORT_4, 2)$/;"	kind:variable	line:27
+blockLift	../BlockManipulateNew.py	/^blockLift = hardwareMap.DcMotor( b, nxt.PORT_3, 1)$/;"	kind:variable	line:28
 button	../NxtCtl/GamePad.py	/^    def button(self,x):$/;"	kind:member	line:167
 clip	../NxtCtl/Range.py	/^def clip(VAL,MIN,MAX):$/;"	kind:function	line:2
 configurationMap.py	../NxtCtl/incomplete/configurationMap.py	1;"	kind:file	line:1
+counter	../Lego3.py	/^counter = 0$/;"	kind:variable	line:36
 csvToSong	../NxtCtl/SoundBrick.py	/^def csvToSong(filename):$/;"	kind:function	line:18
 dpad_down	../NxtCtl/GamePad.py	/^    dpad_down = False  #ABS_HAT0Y, 1$/;"	kind:variable	line:149
 dpad_left	../NxtCtl/GamePad.py	/^    dpad_left = False  #ABS_HAT0X,-1$/;"	kind:variable	line:150
@@ -62,16 +72,14 @@ gamepad1	../NxtCtl/GamePad.py	/^gamepad1 = ol_Gamepad(0)$/;"	kind:variable	line:
 gamepad2	../NxtCtl/GamePad.py	/^gamepad2 = ol_Gamepad(1)$/;"	kind:variable	line:250
 gamepad3	../NxtCtl/GamePad.py	/^gamepad3 = ol_Gamepad(2)$/;"	kind:variable	line:251
 gamepad4	../NxtCtl/GamePad.py	/^gamepad4 = ol_Gamepad(3)$/;"	kind:variable	line:252
-gamepadA	../AutoBlockMove.py	/^gamepadA = gamepad1$/;"	kind:variable	line:14
-gamepadA	../AutoJewelSense.py	/^gamepadA = gamepad1$/;"	kind:variable	line:13
-gamepadA	../AutoJewelSense.py	/^gamepadA = gamepad1$/;"	kind:variable	line:28
-gamepadA	../BlockManipulate.py	/^gamepadA = gamepad1$/;"	kind:variable	line:13
-gamepadA	../RelicManipulate.py	/^gamepadA = gamepad1$/;"	kind:variable	line:13
-gamepadB	../AutoBlockMove.py	/^gamepadB = gamepad2$/;"	kind:variable	line:15
-gamepadB	../AutoJewelSense.py	/^gamepadB = gamepad2$/;"	kind:variable	line:14
-gamepadB	../AutoJewelSense.py	/^gamepadB = gamepad2$/;"	kind:variable	line:29
-gamepadB	../BlockManipulate.py	/^gamepadB = gamepad2$/;"	kind:variable	line:14
-gamepadB	../RelicManipulate.py	/^gamepadB = gamepad2$/;"	kind:variable	line:14
+gamepadA	../BlockManipulateNew.py	/^gamepadA = gamepad1$/;"	kind:variable	line:14
+gamepadA	../Lego1.py	/^gamepadA = gamepad1$/;"	kind:variable	line:13
+gamepadA	../Lego2.py	/^gamepadA = gamepad1$/;"	kind:variable	line:14
+gamepadA	../Lego3.py	/^gamepadA = gamepad1$/;"	kind:variable	line:14
+gamepadB	../BlockManipulateNew.py	/^gamepadB = gamepad2$/;"	kind:variable	line:15
+gamepadB	../Lego1.py	/^gamepadB = gamepad2$/;"	kind:variable	line:14
+gamepadB	../Lego2.py	/^gamepadB = gamepad2$/;"	kind:variable	line:15
+gamepadB	../Lego3.py	/^gamepadB = gamepad2$/;"	kind:variable	line:15
 gamepads	../NxtCtl/GamePad.py	/^    gamepads = []$/;"	kind:variable	line:134
 getFreqFunc	../NxtCtl/SoundBrick.py	/^def getFreqFunc(x):$/;"	kind:function	line:5
 getPower	../NxtCtl/hardwareMap.py	/^    def getPower(self,power):$/;"	kind:member	line:20
@@ -80,28 +88,34 @@ get_enc_current	../NxtCtl/hardwareMap.py	/^    def get_enc_current(self):$/;"	ki
 get_enc_target	../NxtCtl/hardwareMap.py	/^    def get_enc_target(self):$/;"	kind:member	line:26
 get_power	../NxtCtl/hardwareMap.py	/^    def get_power(self):$/;"	kind:member	line:16
 get_state	../NxtCtl/GamePad.py	/^    def get_state(self):$/;"	kind:member	line:240
+get_val	../Lego1.py	/^def get_val(ident):$/;"	kind:function	line:42
+get_val	../NxtCtl/React.py	/^    def get_val(self,ident):$/;"	kind:member	line:25
 guide	../NxtCtl/GamePad.py	/^    guide = False #BTN_MODE$/;"	kind:variable	line:141
 hardwareMap.py	../NxtCtl/hardwareMap.py	1;"	kind:file	line:1
 hardwareMap.py	../NxtCtl/incomplete/hardwareMap.py	1;"	kind:file	line:1
-init	../NxtCtl/OpMode.py	/^def init():$/;"	kind:function	line:8
-init_loop	../NxtCtl/OpMode.py	/^def init_loop():$/;"	kind:function	line:10
-isNear	../NxtCtl/Range.py	/^def isNear(var,target,threshold):$/;"	kind:function	line:13
+init	../NxtCtl/incomplete/OpMode.py	/^def init():$/;"	kind:function	line:8
+init_loop	../NxtCtl/incomplete/OpMode.py	/^def init_loop():$/;"	kind:function	line:10
+isNear	../NxtCtl/Range.py	/^def isNear(var,target,threshold):$/;"	kind:function	line:14
+is_diff	../Lego1.py	/^def is_diff(ident):$/;"	kind:function	line:34
+is_diff	../NxtCtl/React.py	/^    def is_diff(self,ident,initial,newest):$/;"	kind:member	line:8
 left_bumper	../NxtCtl/GamePad.py	/^    left_bumper = False    #BTN_TL$/;"	kind:variable	line:153
 left_stick_button	../NxtCtl/GamePad.py	/^    left_stick_button = False   #BTN_THUMBL$/;"	kind:variable	line:159
 left_stick_x	../NxtCtl/GamePad.py	/^    left_stick_x = 0 #ABS_X$/;"	kind:variable	line:162
 left_stick_y	../NxtCtl/GamePad.py	/^    left_stick_y = 0 #ABS_Y$/;"	kind:variable	line:161
 left_trigger	../NxtCtl/GamePad.py	/^    left_trigger  = 0 #ABS_Z$/;"	kind:variable	line:155
-loop	../NxtCtl/OpMode.py	/^def loop():$/;"	kind:function	line:12
+loop	../NxtCtl/incomplete/OpMode.py	/^def loop():$/;"	kind:function	line:12
 map_1	../NxtCtl/incomplete/configurationMap.py	/^map_1 = {$/;"	kind:variable	line:3
 message	../NxtCtl/GamePad.py	/^    message = 0 #Gamepad Indicator message 3 state switch: int 0-2$/;"	kind:variable	line:130
-motorLeft	../AutoJewelSense.py	/^motorLeft = hardwareMap.DcMotor( b, nxt.PORT_1, 2)$/;"	kind:variable	line:33
-motorLeft	../BlockManipulate.py	/^motorLeft = hardwareMap.DcMotor( b, nxt.PORT_1, 2)$/;"	kind:variable	line:18
-motorLeft1	../AutoJewelSense.py	/^motorLeft1 = hardwareMap.DcMotor( b, nxt.PORT_2, 2)$/;"	kind:variable	line:36
-motorLeft1	../BlockManipulate.py	/^motorLeft1 = hardwareMap.DcMotor( b, nxt.PORT_2, 2)$/;"	kind:variable	line:21
-motorRight	../AutoJewelSense.py	/^motorRight = hardwareMap.DcMotor( b, nxt.PORT_1, 1)$/;"	kind:variable	line:32
-motorRight	../BlockManipulate.py	/^motorRight = hardwareMap.DcMotor( b, nxt.PORT_1, 1)$/;"	kind:variable	line:17
-motorRight1	../AutoJewelSense.py	/^motorRight1 = hardwareMap.DcMotor( b, nxt.PORT_2, 1)$/;"	kind:variable	line:35
-motorRight1	../BlockManipulate.py	/^motorRight1 = hardwareMap.DcMotor( b, nxt.PORT_2, 1)$/;"	kind:variable	line:20
+motorLeft	../BlockManipulateNew.py	/^motorLeft = hardwareMap.DcMotor( b, nxt.PORT_1, 2)$/;"	kind:variable	line:19
+motorLeft	../Lego1.py	/^motorLeft = nxt.Motor(b,nxt.PORT_A)$/;"	kind:variable	line:16
+motorLeft	../Lego2.py	/^motorLeft = nxt.Motor(b,nxt.PORT_A)$/;"	kind:variable	line:17
+motorLeft	../Lego3.py	/^motorLeft = nxt.Motor(b,nxt.PORT_A)$/;"	kind:variable	line:17
+motorLeft1	../BlockManipulateNew.py	/^motorLeft1 = hardwareMap.DcMotor( b, nxt.PORT_2, 2)$/;"	kind:variable	line:22
+motorRight	../BlockManipulateNew.py	/^motorRight = hardwareMap.DcMotor( b, nxt.PORT_1, 1)$/;"	kind:variable	line:18
+motorRight	../Lego1.py	/^motorRight = nxt.Motor(b,nxt.PORT_B)$/;"	kind:variable	line:17
+motorRight	../Lego2.py	/^motorRight = nxt.Motor(b,nxt.PORT_B)$/;"	kind:variable	line:18
+motorRight	../Lego3.py	/^motorRight = nxt.Motor(b,nxt.PORT_B)$/;"	kind:variable	line:18
+motorRight1	../BlockManipulateNew.py	/^motorRight1 = hardwareMap.DcMotor( b, nxt.PORT_2, 1)$/;"	kind:variable	line:21
 note_arr	../NxtCtl/SoundBrick.py	/^note_arr = note_str.split(" ")$/;"	kind:variable	line:3
 note_freq	../NxtCtl/SoundBrick.py	/^note_freq = {}$/;"	kind:variable	line:4
 note_str	../NxtCtl/SoundBrick.py	/^note_str = "la la# lb lc lc# ld ld# le lf lf# lg lg# a a# b c c# d d# e f f# g g# ha ha# hb hc hc# hd hd# he hf hf# hg hg# 2a 2a# 2b 2c 2c# 2d 2d# 2e 2f 2f# 2g 2g# 3a 3a# 3b 3c 3c# 3d 3d# 3e 3f 3f# 3g 3g# 3a"$/;"	kind:variable	line:2
@@ -118,20 +132,20 @@ playSound	../NxtCtl/SoundBrick.py	/^    def playSound(self,batch,tempo):$/;"	kin
 playSoundSample	../NxtCtl/SoundBrick.py	/^    def playSoundSample(self,b,batchNum,tempo):$/;"	kind:member	line:52
 playSoundSample	../NxtCtl/SoundBrick.py	/^    def playSoundSample(self,batchNum,tempo):$/;"	kind:member	line:112
 play_notes	../NxtCtl/SoundBrick.py	/^play_notes = []$/;"	kind:variable	line:14
-r_grabber	../BlockManipulate.py	/^def r_grabber():$/;"	kind:function	line:33
-r_motorPower	../AutoJewelSense.py	/^def r_motorPower(): # Multicontroller admin-dpad&left_stick user-left_stick$/;"	kind:function	line:38
-r_motorPower	../BlockManipulate.py	/^def r_motorPower(): # Multicontroller admin-dpad&left_stick user-left_stick$/;"	kind:function	line:52
-r_motorPower	../RelicManipulate.py	/^def r_motorPower(): # Multicontroller admin-dpad&left_stick user-left_stick$/;"	kind:function	line:38
-r_relicGrab	../RelicManipulate.py	/^def r_relicGrab():$/;"	kind:function	line:32
-r_senseTest	../AutoJewelSense.py	/^def r_senseTest():$/;"	kind:function	line:67
-reset	../NxtCtl/GameGraphics.py	/^    def reset(self):$/;"	kind:member	line:11
+r_grabber	../BlockManipulateNew.py	/^def r_grabber():$/;"	kind:function	line:35
+r_motorPower	../BlockManipulateNew.py	/^def r_motorPower(): # Multicontroller admin-dpad&left_stick user-left_stick$/;"	kind:function	line:57
+react	../NxtCtl/React.py	/^react = ReactCtl()/;"	kind:variable	line:36
+reset	../NxtCtl/incomplete/GameGraphics.py	/^    def reset(self):$/;"	kind:member	line:11
+rightPower	../Lego3.py	/^def rightPower(power):$/;"	kind:function	line:31
 right_bumper	../NxtCtl/GamePad.py	/^    right_bumper = False   #BTN_TR$/;"	kind:variable	line:154
 right_stick_button	../NxtCtl/GamePad.py	/^    right_stick_button = False  #BTN_THUMBR$/;"	kind:variable	line:160
 right_stick_x	../NxtCtl/GamePad.py	/^    right_stick_x = 0 #ABS_RX$/;"	kind:variable	line:164
 right_stick_y	../NxtCtl/GamePad.py	/^    right_stick_y = 0 #ABS_RY$/;"	kind:variable	line:163
 right_trigger	../NxtCtl/GamePad.py	/^    right_trigger = 0 #ABS_RZ$/;"	kind:variable	line:156
-run	../NxtCtl/OpMode.py	/^def run():$/;"	kind:function	line:15
+rigthToTarget	../Lego3.py	/^def rigthToTarget(target):$/;"	kind:function	line:20
+run	../Lego1.py	/^    def run(self):$/;"	kind:member	line:28
 run	../NxtCtl/SoundBrick.py	/^    def run(self):$/;"	kind:member	line:37
+run	../NxtCtl/incomplete/OpMode.py	/^def run():$/;"	kind:function	line:15
 safeCreation	../NxtCtl/SoundBrick.py	/^    def safeCreation(self):$/;"	kind:member	line:134
 safeStart	../NxtCtl/SoundBrick.py	/^    def safeStart(self):$/;"	kind:member	line:49
 setPosition	../NxtCtl/hardwareMap.py	/^    def setPosition(self, pos):$/;"	kind:member	line:49
@@ -140,21 +154,25 @@ set_enc_target	../NxtCtl/hardwareMap.py	/^    def set_enc_target(self, val):$/;"
 set_mode	../NxtCtl/hardwareMap.py	/^    def set_mode(self,mode):$/;"	kind:member	line:32
 set_pos	../NxtCtl/hardwareMap.py	/^    def set_pos(self, pos):$/;"	kind:member	line:45
 set_power	../NxtCtl/hardwareMap.py	/^    def set_power(self,power):$/;"	kind:member	line:8
+set_val	../Lego1.py	/^def set_val(ident,arr):$/;"	kind:function	line:45
 show_status	../NxtCtl/GamePad.py	/^    def show_status(self):$/;"	kind:member	line:242
 start	../NxtCtl/GamePad.py	/^    start = False #BTN_START$/;"	kind:variable	line:139
 status	../NxtCtl/GamePad.py	/^    def status(self):$/;"	kind:member	line:174
 status0	../NxtCtl/GamePad.py	/^    status0 = False$/;"	kind:variable	line:132
 status1	../NxtCtl/GamePad.py	/^    status1 = False$/;"	kind:variable	line:133
 success	../NxtCtl/SoundBrick.py	/^    def success(self):$/;"	kind:member	line:137
-telemetry	../NxtCtl/GameGraphics.py	/^telemetry = TextDisplay("First Display")$/;"	kind:variable	line:55
-telemetry	../NxtCtl/OpMode.py	/^telemetry = TextDisplay("Robot Telemetry")$/;"	kind:variable	line:6
+telemetry	../NxtCtl/incomplete/GameGraphics.py	/^telemetry = TextDisplay("First Display")$/;"	kind:variable	line:55
+telemetry	../NxtCtl/incomplete/OpMode.py	/^telemetry = TextDisplay("Robot Telemetry")$/;"	kind:variable	line:6
 toStr_bool	../NxtCtl/GamePad.py	/^    def toStr_bool(self):$/;"	kind:member	line:224
 toStr_float	../NxtCtl/GamePad.py	/^    def toStr_float(self):$/;"	kind:member	line:232
 ul_Gamepad	../NxtCtl/GamePad.py	/^class ul_Gamepad(object):$/;"	kind:class	line:4
-update	../NxtCtl/GameGraphics.py	/^    def update(self):$/;"	kind:member	line:19
+update	../Lego1.py	/^    def update(self):$/;"	kind:member	line:25
 update	../NxtCtl/GamePad.py	/^    def update(self):$/;"	kind:member	line:184
 update	../NxtCtl/GamePad.py	/^    def update(self):$/;"	kind:member	line:38
-updater	../NxtCtl/GameGraphics.py	/^    def updater(self):$/;"	kind:member	line:17
+update	../NxtCtl/React.py	/^    def update(self,ident,value):$/;"	kind:member	line:28
+update	../NxtCtl/incomplete/GameGraphics.py	/^    def update(self):$/;"	kind:member	line:19
 updater	../NxtCtl/GamePad.py	/^    def updater(self):$/;"	kind:member	line:221
+updater	../NxtCtl/incomplete/GameGraphics.py	/^    def updater(self):$/;"	kind:member	line:17
+x	../Lego3.py	/^x=0$/;"	kind:variable	line:37
 x	../NxtCtl/GamePad.py	/^    x = False #BTN_NORTH$/;"	kind:variable	line:145
 y	../NxtCtl/GamePad.py	/^    y = False #BTN_WEST$/;"	kind:variable	line:146
