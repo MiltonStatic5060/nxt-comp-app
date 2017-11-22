@@ -9,8 +9,8 @@ import nxt.bluesock # Make sure you remember this!
 from nxt.sensor.hitechnic import *
 
 #--Initialize--
-b = nxt.bluesock.BlueSock('00:16:53:16:12:02').connect() #5060-S
-# b = nxt.bluesock.BlueSock('00:16:53:10:22:3D').connect() #5060
+# b = nxt.bluesock.BlueSock('00:16:53:16:12:02').connect() #5060-S
+b = nxt.bluesock.BlueSock('00:16:53:10:22:3D').connect() #5060
 gamepadA = gamepad1
 gamepadB = gamepad2
 
@@ -26,32 +26,44 @@ ServoCon(b,PORT_4).set_pwm(0)
 blockGrabL = hardwareMap.Servo( b, nxt.PORT_4, 1)
 blockGrabR = hardwareMap.Servo( b, nxt.PORT_4, 2)
 blockLift = hardwareMap.DcMotor( b, nxt.PORT_3, 1)
+relicLift = hardwareMap.DcMotor( b, nxt.PORT_3, 2)
 
 blockLift.set_mode(4) # reset encoder
 blockLift.set_enc_target(0) # set target to 0
 blockLift.set_mode(3) # run to position
 
+relicLift.set_mode(4) # reset encoder
+relicLift.set_enc_target(0) # set target to 0
+relicLift.set_mode(3) # run to position
+
+armSwitch = False
+
+relicLift.setPower(0.5)
 blockLift.setPower(0.5)
 def r_grabber():
+    global armSwitch
     #blockGrabL blockGrabR blockLift
     right_trigger = gamepadA.right_trigger
-    if(react.is_diff("blockGrabL",0,Range.clip(right_trigger*255,0,255-100))):
+    if(react.is_diff("blockGrabL",0,Range.clip(right_trigger*255,0,255-130))):
         blockGrabL.setPosition(react.get_val("blockGrabL"))
-    if(react.is_diff("blockGrabR",255,Range.clip((1.0-right_trigger)*255,100,255))):
+    if(react.is_diff("blockGrabR",255,Range.clip((1.0-right_trigger)*255,130,255))):
         blockGrabR.setPosition(react.get_val("blockGrabR"))
     
     #TEMPORARY
-    right_stick_y = gamepadA.right_stick_y
-    
-    if(react.is_diff("blockLift",0,gamepadA.left_trigger*-2880)):
-        blockLift.set_enc_target(react.get_val("blockLift"))
-
+    # right_stick_y = gamepadA.right_stick_y
+    if(not armSwitch):
+        if(react.is_diff("blockLift",0,gamepadA.left_trigger*-2880)):
+            blockLift.set_enc_target(react.get_val("blockLift"))
+    armSwitch = gamepad1.back
+    if(gamepad1.guide):
+        blockLift.set_power(gamepad1.right_stick_y)
     # print blockLift.get_enc_current(),
     # print blockLift.get_enc_target()
-
-    if(gamepadA.back):
-        blockLift.set_mode(4) # reset encoder
-        blockLift.set_mode(3) # reset encoder
+    # blockLift.setPower(0.5)
+    # relicLift.setPower(0.5)
+    if(armSwitch):
+        if(react.is_diff("relicLift",0,gamepadA.left_trigger*1440/4.0)):
+            relicLift.set_enc_target(react.get_val("relicLift"))
     
 
 def r_motorPower(): # Multicontroller admin-dpad&left_stick user-left_stick
@@ -79,18 +91,18 @@ def r_motorPower(): # Multicontroller admin-dpad&left_stick user-left_stick
     powRight1 = Range.clip( left_y + right_y - left_x + right_x , -1 , 1 )
     powLeft1 =  Range.clip( left_y + right_y + left_x - right_x , -1 , 1 )
 
-    if(is_diff("motorRight",0,-powRight)):
+    if(react.is_diff("motorRight",0,-powRight)):
         motorRight.setPower(-powRight)
 
-    if(is_diff("motorLeft",0,powLeft)):
+    if(react.is_diff("motorLeft",0,powLeft)):
         motorLeft.setPower(powLeft)
         
-    if(is_diff("motorRight1",0,-powRight1)):
+    if(react.is_diff("motorRight1",0,-powRight1)):
         motorRight1.setPower(-powRight1)
 
-    if(is_diff("motorLeft1",0,powLeft1)):
+    if(react.is_diff("motorLeft1",0,powLeft1)):
         motorLeft1.setPower(powLeft1)
-
+counter = 0
 while 1:
     r_motorPower()
     r_grabber()
@@ -98,3 +110,9 @@ while 1:
     #     print "Voltage:",
     #     print blockLift.get_battery_voltage(),
     #     print "V",
+    counter+=1
+
+    if(counter==17):
+        counter=0
+        blockLift.setPower(0.5)
+        relicLift.setPower(0.5)
