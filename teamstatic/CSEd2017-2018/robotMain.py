@@ -11,8 +11,10 @@ import nxt.bluesock # Make sure you remember this!
 from nxt.sensor.hitechnic import *
 
 # --Initialize--
-# b = nxt.bluesock.BlueSock('00:16:53:16:12:02').connect() #5060-S
-b = nxt.bluesock.BlueSock('00:16:53:10:22:3D').connect() #5060
+def get_brick1():
+    return nxt.bluesock.BlueSock('00:16:53:16:12:02').connect() #5060-S
+def get_brick2():
+    return nxt.bluesock.BlueSock('00:16:53:10:22:3D').connect() #5060
 gamepadA = gamepad1
 gamepadB = gamepad2
 
@@ -28,6 +30,7 @@ class RobotMain(object):
 
     def testCommand(self):
         self.soundPlayer.playSoundSample(1,120)
+
     def initWheels(self,port1=nxt.PORT_1,port2=nxt.PORT_2):
         # Wheels - 2 Different Controllers
         self.motorFR = hardwareMap.DcMotor(self.b,port1,1)
@@ -70,8 +73,8 @@ class RobotMain(object):
         right_x = self.gamepadA.right_stick_x + self.gamepadB.right_stick_x
 
         powFR =  Range.clip( left_y + right_y + left_x + right_x , -1 , 1 )
-        powFL =   Range.clip( left_y + right_y - left_x - right_x , -1 , 1 )
-        powBR = Range.clip( left_y + right_y - left_x + right_x , -1 , 1 )
+        powFL =  Range.clip( left_y + right_y - left_x - right_x , -1 , 1 )
+        powBR =  Range.clip( left_y + right_y - left_x + right_x , -1 , 1 )
         powBL =  Range.clip( left_y + right_y + left_x - right_x , -1 , 1 )
 
         if(self.react.is_diff("motorFR",0,-powFR)):
